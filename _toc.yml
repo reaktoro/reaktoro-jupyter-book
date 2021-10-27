@@ -1,0 +1,25 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Get Started
+    chapters:
+    - file: installation/installation-intro
+      sections:
+      - file: installation/installation-using-conda
+      - file: installation/installation-using-cmake
+  - caption: Tutorials
+    chapters:
+      - file: tutorials/tutorials-intro
+  # - caption: Topic Guides
+  #   chapters:
+  - caption: About Reaktoro
+    chapters:
+    - url: https://reaktoro.org/cpp
+      title: API Reference
+    - file: about/citing
+    - file: about/faq
+    - file: about/license
+

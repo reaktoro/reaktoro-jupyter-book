@@ -1,0 +1,14 @@
+name: reaktoro-jupyter-book
+
+channels:
+  - conda-forge
+
+dependencies:
+  - reaktoro==2.0.0rc7
+  - pip
+  - pip:
+    - numpy
+    - numba
+    - matplotlib
+    - pandas
+    - jupyter-book
