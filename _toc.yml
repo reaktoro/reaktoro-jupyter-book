@@ -21,5 +21,6 @@ parts:
       title: API Reference
     - file: about/citing
     - file: about/faq
+    - file: about/troubleshooting
     - file: about/license
 

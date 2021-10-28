@@ -12,3 +12,4 @@ dependencies:
     - matplotlib
     - pandas
     - jupyter-book
+    - sphinx-inline-tabs

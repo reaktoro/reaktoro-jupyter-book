@@ -1,4 +1,15 @@
-# Installation using Conda
+# Installation
+
+Installing Reaktoro for Python and C++ can be done in different ways, from
+executing a simple terminal command to building the entire project from
+source. All current possibilities are detailed below.
+
+```{note}
+If any of the steps below do not work for you, please check the section
+[Please help me installing Reaktoro!](#please-help-me-installing-reaktoro).
+```
+
+## Installation using Conda
 
 Reaktoro can be easily installed using [Conda](https://conda.io/docs/), a
 powerfull package manager used to simplify Reaktoro's installation and the
@@ -12,8 +23,7 @@ conda install reaktoro
 
 Follow the Conda installation steps shown next before you execute this command!
 
-(installing_conda)=
-## Installing Conda
+### Installing Conda
 
 Conda can be installed by installing either
 [Anaconda](https://www.anaconda.com/download) or
@@ -29,7 +39,7 @@ You'll be able to choose installers for Windows, macOS, and Linux (32-bit or
 64-bit). We recommend the **latest 64-bit Miniconda installer** for your
 operating system.
 
-## Adding conda-forge channel
+### Adding conda-forge channel
 
 The Reaktoro pre-built package `reaktoro` is hosted on
 [conda-forge](https://anaconda.org/conda-forge/reaktoro). After installing
@@ -51,7 +61,7 @@ conda install reaktoro
 but you may want to follow the recommendation in the next section to install
 Reaktoro in a new conda environment instead of the default `base` environment.
 
-## Install Reaktoro in a new conda environment (optional)
+### Install Reaktoro in a new conda environment (optional)
 
 Now that you have `conda` installed, either via Anaconda or Miniconda, you may
 want to create a *conda environment* in which the Python package `reaktoro` is
@@ -74,7 +84,7 @@ After executing the command above, you should get an output similar to the follo
 Collecting package metadata (current_repodata.json): done
 Solving environment: done
 
-# Package Plan #
+## Package Plan ##
 
   environment location: /home/allanleal/miniconda3/envs/rkt
 
@@ -159,7 +169,7 @@ pip install numba
 ~~~
 ```
 
-# Please help me installing Reaktoro!
+## Please help me installing Reaktoro!
 
 If you are having a hard time installing Reaktoro via `conda`, please get in
 touch via [Gitter](https://gitter.im/reaktoro/community). Please make sure you
