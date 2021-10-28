@@ -3,7 +3,7 @@
 
 title: ""
 author: ""
-logo: img/reaktoro-for-python-and-cpp.svg
+logo: images/reaktoro-for-python-and-cpp.svg
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -28,7 +28,7 @@ repository:
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
-  favicon: img/reaktoro-logo.svg
+  favicon: images/reaktoro-logo.svg
   home_page_in_navbar: false
   use_issues_button: true
   use_repository_button: true

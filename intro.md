@@ -1,5 +1,5 @@
 
-![](img/reaktoro-for-python-and-cpp.svg)
+![](images/reaktoro-for-python-and-cpp.svg)
 
 Welcome to the documentation of Reaktoro for Python and C++, where we show how
 Reaktoro can be used for a wide variety of chemically reactive calculations.
