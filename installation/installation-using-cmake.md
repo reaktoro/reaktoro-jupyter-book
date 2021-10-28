@@ -4,7 +4,7 @@
 Reaktoro has several software and library dependencies that need to be
 pre-installed for its successful compilation and installation using
 [CMake](https://cmake.org/). To greatly simplify the building process of
-Reaktoro for Windows, macOS, and Linux, you'll need
+Reaktoro for Linux, Windows, and macOS, you'll need
 [Conda](https://conda.io/docs/).
 
 Please follow the [Conda installation steps](installing_conda) before
@@ -32,7 +32,7 @@ After installing `conda`, go to a terminal and execute:
 conda install -n base conda-devenv
 ~~~
 
-to install `conda-devenv` in the `base` conda environment.
+to install conda-devenv in the `base` conda environment.
 
 
 ## Downloading Reaktoro from GitHub
@@ -95,7 +95,6 @@ You need to activate the conda environment `reaktoro` whenever you use Reaktoro
 from C++ or Python! This is because conda will adjust some environment
 variables in your system (e.g., `PYTHONPATH`, `LD_LIBRARY_PATH`, `PATH`) so
 that Reaktoro's libraries, executables, and Python packages can be found.
-
 Activating the `reaktoro` conda environment is the simplest way to get these
 environment variables set correctly.
 ```
@@ -274,41 +273,15 @@ cmake --build build --config Release --target install
 This step will install Reaktoro's C++ header files, libraries, executables,
 and the Python package `reaktoro` in the specified installation path.
 
+# Please help me installing Reaktoro!
 
-## Checking for a successful installation
+If you are having a hard time installing Reaktoro via `cmake`, please get in
+touch via [Gitter][Gitter]. Please make sure you
+have already tried investigating the issue before contacting us there, as it
+may be just a common `cmake` issue for which a solution already exists!
 
-Check if Reaktoro was installed correctly by executing:
+Also, please make sure this is a new issue before reporting it to us via
+[Reaktoro's GitHub Issues](https://github.com/reaktoro/reaktoro/issues/new).
+We can chat first about this in [Gitter][Gitter].
 
-~~~ {.sourceCode .bash}
-python -c 'import reaktoro; print(reaktoro.__path__[0])'
-~~~
-
-This should print the path to the installed python package `reaktoro`.
-For example:
-
-~~~ {.sourceCode .bash}
-/home/user/miniconda3/envs/reaktoro/lib/pythonX.Y/site-packages/reaktoro
-~~~
-
-where `pythonX.Y` above depends on the python version used.
-
-::: {.attention}
-::: {.admonition-title}
-Attention
-:::
-
-Make sure you have the conda environment `reaktoro` active! Otherwise
-the checking above might not work without further actions (e.g.,
-changing the `PYTHONPATH` environment variable).
-:::
-
-If you get instead something like:
-
-~~~ {.sourceCode .bash}
-Traceback (most recent call last):
-    File "<string>", line 1, in <module>
-ModuleNotFoundError: No module named 'reaktoro'
-~~~
-
-then the installation was not successful or it was installed in a custom
-path that is not yet given in the `PYTHONPATH` environment variable.
+[Gitter]: https://gitter.im/reaktoro/community

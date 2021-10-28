@@ -165,7 +165,3 @@ If you are having a hard time installing Reaktoro via `conda`, please get in
 touch via [Gitter](https://gitter.im/reaktoro/community). Please make sure you
 have already tried investigating the issue before contacting us there, as it
 may be just a common `conda` issue for which a solution already exists!
-
-If you are facing issues building Reaktoro from source, please make sure this
-is a new issue before reporting it to us via
-[Reaktoro's GitHub Issues](https://github.com/reaktoro/reaktoro/issues/new).
