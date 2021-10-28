@@ -13,6 +13,9 @@ parts:
   - caption: Tutorials
     chapters:
       - file: tutorials/tutorials-intro
+      - file: tutorials/tutorials-simple-equilibrium
+      - file: tutorials/tutorials-equilibrium-fixed-ph
+      - file: tutorials/tutorials-inspecting-databases
   # - caption: Topic Guides
   #   chapters:
   - caption: About Reaktoro

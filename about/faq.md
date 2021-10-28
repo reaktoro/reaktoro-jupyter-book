@@ -9,3 +9,6 @@
 1. How do I cite Reaktoro?
 
 1. Where can I request help about Reaktoro?
+
+1. I'm not a programmer. I find it difficult to use Reaktoro. What can I do?
+

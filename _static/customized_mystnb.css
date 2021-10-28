@@ -1,0 +1,7 @@
+/* Input cells */
+
+div.cell div.cell_input {
+    border: 0px #ccc solid;
+    border-left-color: rgb(41, 52, 68);
+    border-left-width: medium;
+}
