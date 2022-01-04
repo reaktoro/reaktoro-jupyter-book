@@ -12,12 +12,15 @@ parts:
       - file: installation/installation-using-cmake
   - caption: Tutorials
     chapters:
-      - file: tutorials/tutorials-intro
-      - file: tutorials/tutorials-simple-equilibrium
-      - file: tutorials/tutorials-equilibrium-fixed-ph
-      - file: tutorials/tutorials-inspecting-databases
-  # - caption: Topic Guides
-  #   chapters:
+      - file: tutorials/index
+      - file: tutorials/equilibrium/index
+        sections:
+        - file: tutorials/equilibrium/solubility-calcite-water
+        - file: tutorials/equilibrium/fixed-ph
+        - file: tutorials/equilibrium/fixed-fugacity
+      - file: tutorials/general/index
+        sections:
+        - file: tutorials/general/inspecting-databases
   - caption: About Reaktoro
     chapters:
     - url: https://reaktoro.org/cpp
