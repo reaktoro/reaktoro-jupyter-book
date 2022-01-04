@@ -37,3 +37,12 @@ html:
 sphinx:
   extra_extensions:
   - sphinx_inline_tabs
+
+parse:
+  myst_substitutions:
+      _1: <sub>1</sub>
+      _2: <sub>2</sub>
+      _3: <sub>3</sub>
+      _4: <sub>4</sub>
+      ^+: <sup>+</sup>
+      ^-: <sup>-</sup>
