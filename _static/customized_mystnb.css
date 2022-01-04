@@ -1,7 +1,15 @@
+:root {
+    /* Colors */
+    --pst-color-preformatted-text: 238, 255, 255;
+    --pst-color-preformatted-background: 38, 50, 56;
+}
+
+
 /* Input cells */
 
 div.cell div.cell_input {
-    border: 0px #ccc solid;
-    border-left-color: rgb(41, 52, 68);
-    border-left-width: medium;
+    border: 0px rgb(38, 50, 56) solid;
+    border-left-color: rgb(255, 203, 107);
+    border-left-width: 7px;
+    background-color: rgb(38, 50, 56);
 }

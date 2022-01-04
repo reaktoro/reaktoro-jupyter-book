@@ -37,6 +37,8 @@ html:
 sphinx:
   extra_extensions:
   - sphinx_inline_tabs
+  config:
+    pygments_style: material
 
 parse:
   myst_substitutions:
