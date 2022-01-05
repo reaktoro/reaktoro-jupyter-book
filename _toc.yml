@@ -6,10 +6,22 @@ root: intro
 parts:
   - caption: Get Started
     chapters:
-    - file: installation/installation-intro
+    - file: get-started/installation/index
       sections:
-      - file: installation/installation-using-conda
-      - file: installation/installation-using-cmake
+      - file: get-started/installation/installation-using-conda
+      - file: get-started/installation/installation-using-cmake
+    - file: get-started/learn/index
+      sections:
+      - file: get-started/learn/howto-import-reaktoro
+      - file: get-started/learn/howto-use-databases
+      - file: get-started/learn/howto-use-other-supported-databases
+      - file: get-started/learn/howto-define-chemical-systems
+      - file: get-started/learn/howto-define-activity-models
+      - file: get-started/learn/howto-define-chemical-states
+      - file: get-started/learn/howto-compute-chemical-properties
+      - file: get-started/learn/howto-compute-aqueous-properties
+      - file: get-started/learn/howto-perform-equilibrium-calculations
+      - file: get-started/learn/howto-specify-equilibrium-constraints
   - caption: Tutorials
     chapters:
       - file: tutorials/index
@@ -19,8 +31,8 @@ parts:
         - file: tutorials/equilibrium/fixed-ph
         - file: tutorials/equilibrium/fixed-fugacity
       - file: tutorials/general/index
-        sections:
-        - file: tutorials/general/inspecting-databases
+        # sections:
+        # - file: tutorials/general/inspecting-databases
   - caption: About Reaktoro
     chapters:
     - url: https://reaktoro.org/cpp
