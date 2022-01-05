@@ -46,5 +46,3 @@ parse:
       _2: <sub>2</sub>
       _3: <sub>3</sub>
       _4: <sub>4</sub>
-      ^+: <sup>+</sup>
-      ^-: <sup>-</sup>
