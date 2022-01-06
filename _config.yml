@@ -3,6 +3,7 @@
 
 title: ""
 author: ""
+copyright: "2022"
 logo: images/reaktoro-for-python-and-cpp.svg
 
 # Force re-execution of notebooks on each build.
