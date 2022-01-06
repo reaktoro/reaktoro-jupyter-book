@@ -16,7 +16,7 @@ Reaktoro from source, you'll need to manually install all dependencies listed
 in the file [`environment.devenv.yml`][environment.devenv.yml].
 ```
 
-[environment.devenv.yml]: https://github.com/reaktoro/reaktoro/blob/master/environment.devenv.yml
+[environment.devenv.yml]: https://github.com/reaktoro/reaktoro/blob/main/environment.devenv.yml
 
 ## Installing conda-devenv
 
@@ -47,13 +47,13 @@ git clone https://github.com/reaktoro/reaktoro.git
 ~~~
 
 or by directly downloading
-[reaktoro-master.zip](https://github.com/reaktoro/reaktoro/archive/master.zip),
+[reaktoro-main.zip](https://github.com/reaktoro/reaktoro/archive/main.zip),
 the latest version of Reaktoro's source code in a zip file.
 
 ```{caution}
 If you use the direct download option above, please unzip the downloaded file
 in a directory of your choice. We assume the unzipped folder is named
-`reaktoro` for the next installation steps, and not `reaktoro-master`! If you
+`reaktoro` for the next installation steps, and not `reaktoro-main`! If you
 are deloping Reaktoro, make sure you use `git clone` instead.
 ```
 
@@ -180,7 +180,7 @@ section.
 
 Reaktoro contains many examples in C++ demonstrating its usage for various
 applications. These examples live in the directory
-[`examples/cpp`](https://github.com/reaktoro/reaktoro/tree/master/examples/cpp)
+[`examples/cpp`](https://github.com/reaktoro/reaktoro/tree/main/examples/cpp)
 within the root directory of Reaktoro.
 
 To build them, execute:
@@ -205,7 +205,7 @@ build/examples/cpp/ex-equilibrium-fixed-ph
 
 Reaktoro also contains many examples written in Python that can be found in the
 directory
-[`examples/python`](https://github.com/reaktoro/reaktoro/tree/master/examples/python)
+[`examples/python`](https://github.com/reaktoro/reaktoro/tree/main/examples/python)
 within the root directory of Reaktoro's source code.
 
 Before we can execute them from the terminal, we need to set the `PYTHONPATH`
