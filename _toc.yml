@@ -22,21 +22,19 @@ parts:
       - file: get-started/learn/howto-compute-aqueous-properties
       - file: get-started/learn/howto-perform-equilibrium-calculations
       - file: get-started/learn/howto-specify-equilibrium-constraints
+    - url: https://reaktoro.org/api
+      title: API Reference
+    - url: https://reaktoro.org/v1
+      title: Reaktoro v1
   - caption: Tutorials
     chapters:
-      - file: tutorials/index
       - file: tutorials/equilibrium/index
         sections:
         - file: tutorials/equilibrium/solubility-calcite-water
         - file: tutorials/equilibrium/fixed-ph
         - file: tutorials/equilibrium/fixed-fugacity
-      - file: tutorials/general/index
-        # sections:
-        # - file: tutorials/general/inspecting-databases
   - caption: About Reaktoro
     chapters:
-    - url: https://reaktoro.org/cpp
-      title: API Reference
     - file: about/citing
     - file: about/faq
     - file: about/troubleshooting
