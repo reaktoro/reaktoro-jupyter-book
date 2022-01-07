@@ -40,10 +40,22 @@ sphinx:
   - sphinx_inline_tabs
   config:
     pygments_style: material
+    bibtex_reference_style: author_year
 
 parse:
   myst_substitutions:
+      _0: <sub>0</sub>
       _1: <sub>1</sub>
       _2: <sub>2</sub>
       _3: <sub>3</sub>
       _4: <sub>4</sub>
+      _5: <sub>5</sub>
+      _6: <sub>6</sub>
+      _7: <sub>7</sub>
+      _8: <sub>8</sub>
+      _9: <sub>9</sub>
+      bibliography: |
+        ```{bibliography}
+        :style: unsrt
+        :filter: docname in docnames
+        ```

@@ -16,10 +16,10 @@ parts:
       - file: get-started/learn/howto-use-databases
       - file: get-started/learn/howto-use-other-supported-databases
       - file: get-started/learn/howto-define-chemical-systems
-      - file: get-started/learn/howto-define-activity-models
       - file: get-started/learn/howto-define-chemical-states
       - file: get-started/learn/howto-compute-chemical-properties
       - file: get-started/learn/howto-compute-aqueous-properties
+      - file: get-started/learn/howto-specify-activity-models
       - file: get-started/learn/howto-perform-equilibrium-calculations
       - file: get-started/learn/howto-specify-equilibrium-constraints
     - url: https://reaktoro.org/api
