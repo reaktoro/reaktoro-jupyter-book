@@ -71,7 +71,10 @@ parse:
       Reaction:                "[`Reaction`](https://reaktoro.org/api/classReaktoro_1_1Reaction.html)"
 
       AqueousPhase:            "[`AqueousPhase`](https://reaktoro.org/api/classReaktoro_1_1AqueousPhase.html)"
+      CondensedPhase:          "[`CondensedPhase`](https://reaktoro.org/api/classReaktoro_1_1CondensedPhase.html)"
+      CondensedPhases:         "[`CondensedPhases`](https://reaktoro.org/api/classReaktoro_1_1CondensedPhases.html)"
       GaseousPhase:            "[`GaseousPhase`](https://reaktoro.org/api/classReaktoro_1_1GaseousPhase.html)"
+      IonExchangePhase:        "[`MineralPhases`](https://reaktoro.org/api/classReaktoro_1_1MineralPhases.html)"
       LiquidPhase:             "[`LiquidPhase`](https://reaktoro.org/api/classReaktoro_1_1LiquidPhase.html)"
       MineralPhase:            "[`MineralPhase`](https://reaktoro.org/api/classReaktoro_1_1MineralPhase.html)"
       MineralPhases:           "[`MineralPhases`](https://reaktoro.org/api/classReaktoro_1_1MineralPhases.html)"

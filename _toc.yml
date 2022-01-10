@@ -22,6 +22,7 @@ parts:
       - file: get-started/learn/howto-specify-activity-models
       - file: get-started/learn/howto-perform-equilibrium-calculations
       - file: get-started/learn/howto-specify-equilibrium-constraints
+    - file: get-started/bibliography
     - url: https://reaktoro.org/api
       title: API Reference
     - url: https://reaktoro.org/v1
