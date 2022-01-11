@@ -35,6 +35,7 @@ parts:
         # - file: tutorials/equilibrium/solubility-calcite-water.ipynb
         - file: tutorials/equilibrium/with-fixed-ph.ipynb
         - file: tutorials/equilibrium/with-fixed-ph-charge-balance.ipynb
+        - file: tutorials/equilibrium/with-fixed-phase-amount.ipynb
         - file: tutorials/equilibrium/with-fixed-fugacity.ipynb
         - file: tutorials/equilibrium/with-fixed-volume-internal-energy.ipynb
         - file: tutorials/equilibrium/with-given-component-amounts.ipynb
