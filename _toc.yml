@@ -20,9 +20,9 @@ parts:
       - file: get-started/learn/howto-compute-chemical-properties
       - file: get-started/learn/howto-compute-aqueous-properties
       - file: get-started/learn/howto-specify-activity-models
-      - file: get-started/learn/howto-perform-equilibrium-calculations
-      - file: get-started/learn/howto-specify-equilibrium-constraints
-      - file: get-started/learn/howto-perform-kinetics-calculations
+      - file: get-started/learn/howto-perform-equilibrium-calculations-basics
+      - file: get-started/learn/howto-perform-equilibrium-calculations-with-constraints
+      - file: get-started/learn/howto-perform-kinetics-calculations-basics
     - file: get-started/bibliography
     - url: https://reaktoro.org/api
       title: API Reference
@@ -32,9 +32,12 @@ parts:
     chapters:
       - file: tutorials/equilibrium/index
         sections:
-        - file: tutorials/equilibrium/solubility-calcite-water
-        - file: tutorials/equilibrium/fixed-ph
-        - file: tutorials/equilibrium/fixed-fugacity
+        # - file: tutorials/equilibrium/solubility-calcite-water.ipynb
+        - file: tutorials/equilibrium/with-fixed-ph.ipynb
+        - file: tutorials/equilibrium/with-fixed-ph-charge-balance.ipynb
+        - file: tutorials/equilibrium/with-fixed-fugacity.ipynb
+        - file: tutorials/equilibrium/with-fixed-volume-internal-energy.ipynb
+        - file: tutorials/equilibrium/with-given-component-amounts.ipynb
   - caption: About Reaktoro
     chapters:
     - file: about/citing
