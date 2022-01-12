@@ -6,39 +6,40 @@ root: intro
 parts:
   - caption: Get Started
     chapters:
-    - file: get-started/installation/index
+    - file: installation/index
       sections:
-      - file: get-started/installation/installation-using-conda
-      - file: get-started/installation/installation-using-cmake
-    - file: get-started/learn/index
-      sections:
-      - file: get-started/learn/howto-import-reaktoro
-      - file: get-started/learn/howto-use-databases
-      - file: get-started/learn/howto-use-other-supported-databases
-      - file: get-started/learn/howto-define-chemical-systems
-      - file: get-started/learn/howto-define-chemical-states
-      - file: get-started/learn/howto-compute-chemical-properties
-      - file: get-started/learn/howto-compute-aqueous-properties
-      - file: get-started/learn/howto-specify-activity-models
-      - file: get-started/learn/howto-perform-equilibrium-calculations-basics
-      - file: get-started/learn/howto-perform-equilibrium-calculations-with-constraints
-      - file: get-started/learn/howto-perform-kinetics-calculations-basics
-    - file: get-started/bibliography
+      - file: installation/installation-using-conda
+      - file: installation/installation-using-cmake
     - url: https://reaktoro.org/api
       title: API Reference
     - url: https://reaktoro.org/v1
       title: Reaktoro v1
   - caption: Tutorials
     chapters:
+      - file: tutorials/basics/index
+        sections:
+        - file: tutorials/basics/importing-reaktoro
+        - file: tutorials/basics/loading-databases
+        - file: tutorials/basics/inspecting-databases
+        - file: tutorials/basics/defining-chemical-systems
+        - file: tutorials/basics/creating-chemical-states
+        - file: tutorials/basics/computing-chemical-properties
+        - file: tutorials/basics/computing-aqueous-properties
+        - file: tutorials/basics/specifing-activity-models
       - file: tutorials/equilibrium/index
         sections:
-        # - file: tutorials/equilibrium/solubility-calcite-water.ipynb
-        - file: tutorials/equilibrium/with-fixed-ph.ipynb
-        - file: tutorials/equilibrium/with-fixed-ph-charge-balance.ipynb
-        - file: tutorials/equilibrium/with-fixed-phase-amount.ipynb
-        - file: tutorials/equilibrium/with-fixed-fugacity.ipynb
-        - file: tutorials/equilibrium/with-fixed-volume-internal-energy.ipynb
-        - file: tutorials/equilibrium/with-given-component-amounts.ipynb
+        - file: tutorials/equilibrium/equilibrium-basics.ipynb
+        - file: tutorials/equilibrium/equilibrium-specifying-constraints.ipynb
+        - file: tutorials/equilibrium/equilibrium-with-fixed-ph.ipynb
+        - file: tutorials/equilibrium/equilibrium-with-fixed-ph-charge-balance.ipynb
+        - file: tutorials/equilibrium/equilibrium-with-fixed-phase-amount.ipynb
+        - file: tutorials/equilibrium/equilibrium-with-fixed-fugacity.ipynb
+        - file: tutorials/equilibrium/equilibrium-with-fixed-volume-internal-energy.ipynb
+        - file: tutorials/equilibrium/equilibrium-with-given-component-amounts.ipynb
+      - file: tutorials/kinetics/index
+        sections:
+        - file: tutorials/kinetics/kinetics-basics.ipynb
+      - file: tutorials/bibliography
   - caption: About Reaktoro
     chapters:
     - file: about/citing

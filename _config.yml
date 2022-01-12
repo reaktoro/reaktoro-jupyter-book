@@ -105,6 +105,7 @@ parse:
 
       FormationReaction:       "[`FormationReaction`](https://reaktoro.org/api/classReaktoro_1_1FormationReaction.html)"
       ChemicalFormula:         "[`ChemicalFormula`](https://reaktoro.org/api/classReaktoro_1_1ChemicalFormula.html)"
+      AggregateState:          "[`AggregateState`](https://reaktoro.org/api/namespaceReaktoro.html#a02ae90aadc24dbff1702399a9c3ca1cd)"
       Elements:                "[`Elements`](https://reaktoro.org/api/classReaktoro_1_1Elements.html)"
       CriticalProps:           "[`CriticalProps`](https://reaktoro.org/api/classReaktoro_1_1CriticalProps.html)"
       DissociationReactions:   "[`DissociationReactions`](https://reaktoro.org/api/classReaktoro_1_1DissociationReactions.html)"
@@ -114,3 +115,5 @@ parse:
       WaterElectroProps:       "[`WaterElectroProps`](https://reaktoro.org/api/structReaktoro_1_1WaterElectroProps.html)"
       WaterThermoProps:        "[`WaterThermoProps`](https://reaktoro.org/api/structReaktoro_1_1WaterThermoProps.html)"
       WaterHelmholtzProps:     "[`WaterHelmholtzProps`](https://reaktoro.org/api/structReaktoro_1_1WaterHelmholtzProps.html)"
+
+      equilibrate:             "[`equilibrate`](https://reaktoro.org/api/namespaceReaktoro.html#a286e2972325304934d631234abef9e87)"
