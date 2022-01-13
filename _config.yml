@@ -44,6 +44,7 @@ sphinx:
 
 parse:
   myst_substitutions:
+      deg: °
       _0: <sub>0</sub>
       _1: <sub>1</sub>
       _2: <sub>2</sub>

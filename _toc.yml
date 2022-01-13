@@ -39,6 +39,9 @@ parts:
       - file: tutorials/kinetics/index
         sections:
         - file: tutorials/kinetics/kinetics-basics.ipynb
+      - file: tutorials/advanced/index
+        sections:
+        - file: tutorials/advanced/creating-custom-databases
       - file: tutorials/bibliography
   - caption: About Reaktoro
     chapters:

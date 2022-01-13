@@ -1,0 +1,80 @@
+Species:
+- Name: H+
+  Formula: H+
+  Elements: 1:H
+  Charge: 1.0
+  AggregateState: Aqueous
+  StandardThermoModel:
+    Constant:
+      G0: 0.0  # in J/mol
+- Name: OH-
+  Formula: OH-
+  Elements: 1:O 1:H
+  Charge: -1.0
+  AggregateState: Aqueous
+  StandardThermoModel:
+    Constant:
+      G0: 0.0  # in J/mol
+- Name: CO3-2
+  Formula: CO3-2
+  Elements: 1:C 3:O
+  Charge: -2.0
+  AggregateState: Aqueous
+  StandardThermoModel:
+    Constant:
+      G0: 0.0
+- Name: Ca+2
+  Formula: Ca+2
+  Elements: 1:Ca
+  Charge: 2.0
+  AggregateState: Aqueous
+  StandardThermoModel:
+    Interpolation:
+      Temperatures: [298.15, 350.0, 400.0]  # in K
+      Pressures: [1.0e+5, 10.0e+5]          # in Pa
+      G0: [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+      H0: [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+- Name: H2O
+  Formula: H2O
+  Elements: 2:H 1:O
+  AggregateState: Aqueous
+  FormationReaction:
+    Reactants: 1:H+ 1:OH-
+    ReactionThermoModel:
+      PhreeqcLgK:
+        A1: -293.29227
+        A2: -0.1360833
+        A3: 10576.913
+        A4: 123.73158
+        A5: 0.0
+        A6: 6.996455e-5
+- Name: HCO3-
+  Formula: HCO3-
+  Elements: 1:H 1:C 3:O
+  Charge: -1.0
+  AggregateState: Aqueous
+  FormationReaction:
+    Reactants: 1:CO3-2 1:H+
+    ReactionThermoModel:
+      VantHoff:
+        lgKr: 10.329
+        dHr: -14899.224  # in J/mol
+- Name: CO2
+  Formula: CO2
+  Elements: 1:C 2:O
+  AggregateState: Aqueous
+  FormationReaction:
+    Reactants: 1:CO3-2 2:H+ -1:H2O
+    ReactionThermoModel:
+      ConstLgK:
+        lgKr: 16.681
+- Name: Calcite
+  Formula: CaCO3
+  Elements: 1:Ca 1:C 3:O
+  AggregateState: Solid
+  FormationReaction:
+    Reactants: 1:CO3-2 1:Ca+2
+    ReactionThermoModel:
+      VantHoff:
+        lgKr: 8.48
+        dHr: 10832.376  # in J/mol
