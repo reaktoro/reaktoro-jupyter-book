@@ -13,3 +13,10 @@ div.cell div.cell_input {
     border-left-width: 7px;
     background-color: rgb(38, 50, 56);
 }
+
+
+/* Fix display math equations in ordered/unordered lists too close to text */
+
+main.bd-content #main-content p~div.math {
+    margin-top: 0px;
+}
