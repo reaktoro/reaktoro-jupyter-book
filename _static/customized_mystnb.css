@@ -5,6 +5,17 @@
 }
 
 
+/* Acknowledgement below header */
+
+p.acknowledgement {
+    color: rgb(170, 170, 170);
+    font-style: italic;
+    font-size: small;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+
 /* Input cells */
 
 div.cell div.cell_input {
