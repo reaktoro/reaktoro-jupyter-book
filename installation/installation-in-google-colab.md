@@ -6,7 +6,7 @@ You can run Reaktoro in [Google Colab](https://colab.research.google.com/). Crea
 !pip install -q condacolab
 import condacolab
 condacolab.install()
-!conda config --append channels conda-forge
+!conda config --add channels conda-forge
 !conda install -y reaktoro
 ~~~
 
