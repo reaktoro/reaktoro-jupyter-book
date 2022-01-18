@@ -36,7 +36,7 @@ The Reaktoro pre-built package `reaktoro` is hosted on
 Miniconda, go to a terminal and execute:
 
 ~~~
-conda config --append channels conda-forge
+conda config --add channels conda-forge
 ~~~
 
 to add the conda-forge channel, required so that the Reaktoro package
