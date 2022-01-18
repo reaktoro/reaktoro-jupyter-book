@@ -10,6 +10,7 @@ parts:
       sections:
       - file: installation/installation-using-conda
       - file: installation/installation-using-cmake
+      - file: installation/installation-in-google-colab
     - url: https://reaktoro.org/api
       title: API Reference
     - url: https://reaktoro.org/v1
