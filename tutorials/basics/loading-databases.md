@@ -1,6 +1,6 @@
 # Loading thermodynamic databases
 
-<p class="acknowledgement">Written by Allan Leal (ETH Zurich) on Jan 5th, 2022*
+<p class="acknowledgement">Written by Allan Leal (ETH Zurich) on Jan 5th, 2022
 
 Reaktoro requires thermodynamic databases to calculate the thermodynamic properties of chemical species and reactions. These properties are necessary when performing chemical equilibrium and kinetics calculations.
 
