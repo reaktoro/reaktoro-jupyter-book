@@ -49,5 +49,5 @@ parts:
     - file: about/citing
     - file: about/faq
     - file: about/troubleshooting
+    - file: about/contributing
     - file: about/license
-
