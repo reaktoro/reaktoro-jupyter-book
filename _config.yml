@@ -44,6 +44,8 @@ sphinx:
 
 parse:
   myst_substitutions:
+      Gitter: "[Gitter](https://gitter.im/reaktoro/community)"
+      autodiff: "[autodiff](https://autodiff.github.io)"
       deg: °
       _0: <sub>0</sub>
       _1: <sub>1</sub>
