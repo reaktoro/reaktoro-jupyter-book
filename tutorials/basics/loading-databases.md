@@ -146,7 +146,7 @@ db = ThermoFunDatabase.fromFile("C:\\Users\\Username\\databases\\mines16-thermof
 
 ## SUPCRT and SUPCRTBL Databases
 
-SUPCRT {cite}`Johnson1992` and SUPCRTBL {cite}`Zimmer2016a` databases contain thousands of chemical species (aqueous species, gases, minerals) and are commonly used for biogeochemical modeling applications. These thermodynamic databases contain parameters for equations of state to permit the computation of standard molal thermodynamic properties of minerals, gases, aqueous species, and reactions from 1 to 5000 bar and 0 to 1000°C.
+SUPCRT {cite}`Johnson1992` and SUPCRTBL {cite}`Zimmer2016a` databases contain thousands of chemical species (aqueous species, gases, minerals) and are commonly used for biogeochemical modeling applications. These thermodynamic databases contain parameters for equations of state to permit the computation of standard molal thermodynamic properties of minerals, gases, aqueous species, and reactions from 1 to 5000 bar and 0 to 1000°C. The theory behind these equations and their derivation can be found across the following publications: {cite:t}`Helgeson1974,Helgeson1974a,Helgeson1976,Helgeson1981,Tanger1988,Shock1992`.
 
 ### Loading embedded SUPCRT and SUPCRTBL database files
 
