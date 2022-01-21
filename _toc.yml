@@ -36,6 +36,7 @@ parts:
         - file: tutorials/equilibrium/equilibrium-with-fixed-phase-amount.ipynb
         - file: tutorials/equilibrium/equilibrium-with-fixed-fugacity.ipynb
         - file: tutorials/equilibrium/equilibrium-with-fixed-volume-internal-energy.ipynb
+        - file: tutorials/equilibrium/equilibrium-with-custom-constraints.ipynb
         - file: tutorials/equilibrium/equilibrium-with-given-component-amounts.ipynb
       - file: tutorials/kinetics/index
         sections:
