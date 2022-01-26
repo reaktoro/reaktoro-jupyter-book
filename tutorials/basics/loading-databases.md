@@ -53,7 +53,7 @@ Read the next sections to learn how different thermodynamic databases from disti
 * [iso.dat](https://github.com/reaktoro/reaktoro/tree/main/databases/phreeqc/iso.dat)
 * [llnl.dat](https://github.com/reaktoro/reaktoro/tree/main/databases/phreeqc/llnl.dat)
 * [minteq.dat](https://github.com/reaktoro/reaktoro/tree/main/databases/phreeqc/minteq.dat)
-* [minteq.v4](https://github.com/reaktoro/reaktoro/tree/main/databases/phreeqc/minteq.v4)
+* [minteq.v4.dat](https://github.com/reaktoro/reaktoro/tree/main/databases/phreeqc/minteq.v4.dat)
 * [phreeqc.dat](https://github.com/reaktoro/reaktoro/tree/main/databases/phreeqc/phreeqc.dat)
 * [pitzer.dat](https://github.com/reaktoro/reaktoro/tree/main/databases/phreeqc/pitzer.dat)
 * [sit.dat](https://github.com/reaktoro/reaktoro/tree/main/databases/phreeqc/sit.dat)
