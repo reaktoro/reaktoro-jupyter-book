@@ -26,7 +26,9 @@ parts:
         - file: tutorials/basics/creating-chemical-states
         - file: tutorials/basics/computing-chemical-properties
         - file: tutorials/basics/computing-aqueous-properties
-        - file: tutorials/basics/specifing-activity-models
+        - file: tutorials/basics/computing-thermo-props-of-species
+        - file: tutorials/basics/computing-thermo-props-of-reactions
+        - file: tutorials/basics/specifying-activity-models
       - file: tutorials/equilibrium/index
         sections:
         - file: tutorials/equilibrium/equilibrium-basics.ipynb
@@ -41,6 +43,8 @@ parts:
       - file: tutorials/kinetics/index
         sections:
         - file: tutorials/kinetics/kinetics-basics.ipynb
+      # - file: tutorials/miscellaneous/index
+        # sections:
       - file: tutorials/advanced/index
         sections:
         - file: tutorials/advanced/creating-custom-databases
