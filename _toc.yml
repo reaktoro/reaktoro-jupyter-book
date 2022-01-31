@@ -43,8 +43,9 @@ parts:
       - file: tutorials/kinetics/index
         sections:
         - file: tutorials/kinetics/kinetics-basics.ipynb
-      # - file: tutorials/miscellaneous/index
-        # sections:
+      - file: tutorials/miscellaneous/index
+        sections:
+        - file: tutorials/miscellaneous/defining-materials
       - file: tutorials/advanced/index
         sections:
         - file: tutorials/advanced/creating-custom-databases

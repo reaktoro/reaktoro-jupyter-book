@@ -120,3 +120,5 @@ parse:
       WaterHelmholtzProps:     "[`WaterHelmholtzProps`](https://reaktoro.org/api/structReaktoro_1_1WaterHelmholtzProps.html)"
 
       equilibrate:             "[`equilibrate`](https://reaktoro.org/api/namespaceReaktoro.html#a286e2972325304934d631234abef9e87)"
+
+      Material:                "[`Material`](https://reaktoro.org/api/classReaktoro_1_1Material.html)"
