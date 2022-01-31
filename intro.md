@@ -11,3 +11,8 @@ useful enough to get started with this new version of Reaktoro!
 ```{admonition} Looking for Reaktoro v1 website?
 If you need to access Reaktoro v1 website, here is the link: https://reaktoro.org/v1
 ```
+
+## Quick Links!
+
+```{tableofcontents}
+```
