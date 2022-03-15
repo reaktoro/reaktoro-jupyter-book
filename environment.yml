@@ -10,6 +10,7 @@ dependencies:
     - numpy
     - numba
     - matplotlib
+    - bokeh
     - pandas
     - jupyter-book
     - sphinx-inline-tabs
