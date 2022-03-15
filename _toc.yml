@@ -50,6 +50,11 @@ parts:
         sections:
         - file: tutorials/advanced/creating-custom-databases
       - file: tutorials/bibliography
+  - caption: Applications
+    chapters:
+    - file: applications/index
+      sections:
+        - file: applications/solubility-calcite.ipynb
   - caption: About Reaktoro
     chapters:
     - file: about/citing
