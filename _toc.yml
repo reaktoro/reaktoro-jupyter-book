@@ -52,9 +52,12 @@ parts:
       - file: tutorials/bibliography
   - caption: Applications
     chapters:
-    - file: applications/index
+    - file: applications/solubility/index
       sections:
-        - file: applications/solubility-calcite.ipynb
+        - file: applications/solubility/solubility-calcite.ipynb
+    - file: applications/exchange/index
+      sections:
+        - file: applications/exchange/ion-exchange-dune-sand.ipynb
   - caption: About Reaktoro
     chapters:
     - file: about/citing
