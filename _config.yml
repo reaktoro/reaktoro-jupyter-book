@@ -77,7 +77,7 @@ parse:
       CondensedPhase:          "[`CondensedPhase`](https://reaktoro.org/api/classReaktoro_1_1CondensedPhase.html)"
       CondensedPhases:         "[`CondensedPhases`](https://reaktoro.org/api/classReaktoro_1_1CondensedPhases.html)"
       GaseousPhase:            "[`GaseousPhase`](https://reaktoro.org/api/classReaktoro_1_1GaseousPhase.html)"
-      IonExchangePhase:        "[`MineralPhases`](https://reaktoro.org/api/classReaktoro_1_1MineralPhases.html)"
+      IonExchangePhase:        "[`IonExchangePhase`](https://reaktoro.org/api/classReaktoro_1_1IonExchangePhase.html)"
       LiquidPhase:             "[`LiquidPhase`](https://reaktoro.org/api/classReaktoro_1_1LiquidPhase.html)"
       MineralPhase:            "[`MineralPhase`](https://reaktoro.org/api/classReaktoro_1_1MineralPhase.html)"
       MineralPhases:           "[`MineralPhases`](https://reaktoro.org/api/classReaktoro_1_1MineralPhases.html)"
@@ -89,6 +89,7 @@ parse:
       ChemicalProps:           "[`ChemicalProps`](https://reaktoro.org/api/classReaktoro_1_1ChemicalProps.html)"
       ThermoProps:             "[`ThermoProps`](https://reaktoro.org/api/classReaktoro_1_1ThermoProps.html)"
       AqueousProps:            "[`AqueousProps`](https://reaktoro.org/api/classReaktoro_1_1AqueousProps.html)"
+      IonExchangeProps:        "[`IonExchageProps`](https://reaktoro.org/api/classReaktoro_1_1IonExchangeProps.html)"
 
       StandardThermoProps:     "[`StandardThermoProps`](https://reaktoro.org/api/structReaktoro_1_1StandardThermoProps.html)"
       ReactionThermoProps:     "[`ReactionThermoProps`](https://reaktoro.org/api/structReaktoro_1_1ReactionThermoProps.html)"
