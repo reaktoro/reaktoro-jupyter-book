@@ -54,7 +54,8 @@ parts:
     chapters:
     - file: applications/solubility/index
       sections:
-        - file: applications/solubility/solubility-calcite.ipynb
+        - file: applications/solubility/solubility-calcite-on-acidity-and-temperature.ipynb
+        - file: applications/solubility/solubility-co2-on-salinity-and-temperature.ipynb
     - file: applications/exchange/index
       sections:
         - file: applications/exchange/ion-exchange-dune-sand.ipynb
