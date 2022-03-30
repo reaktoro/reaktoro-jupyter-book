@@ -56,6 +56,10 @@ parts:
       sections:
         - file: applications/solubility/solubility-calcite-on-acidity-and-temperature.ipynb
         - file: applications/solubility/solubility-co2-on-salinity-and-temperature.ipynb
+    - file: applications/geobiology/index
+      sections:
+        - file: applications/geobiology/geobiology-streammodel-fixed-fugacity.ipynb
+        - file: applications/geobiology/geobiology-phreeqc-fixed-fugacity.ipynb
     - file: applications/exchange/index
       sections:
         - file: applications/exchange/ion-exchange-dune-sand.ipynb
