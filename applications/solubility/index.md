@@ -1,5 +1,6 @@
 # Solubility
 
-In the sections below, you find a variety of applications where solubility of gases and minerals are modeled using Reaktoro. 
+This section presents capabilities of Reaktoro for modeling solubility of different chemical substances.
 
-This is a work in progress.
+```{tableofcontents}
+```
