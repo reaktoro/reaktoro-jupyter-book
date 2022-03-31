@@ -72,6 +72,9 @@ parts:
         - file: applications/miscellaneous/ph-dependence-on-contaminants-in-water.ipynb
         - file: applications/miscellaneous/evian-water-analysis.ipynb
         - file: applications/miscellaneous/opening-bottel-with-sparkling-water.ipynb
+    - file: applications/thermofun/index
+      sections:
+        - file: applications/thermofun/thermofun-uraniun-solubility-vs-pH.ipynb
   - caption: About Reaktoro
     chapters:
     - file: about/citing
