@@ -70,6 +70,8 @@ parts:
       sections:
         - file: applications/miscellaneous/ph-dependence-on-co2-addition-in-seawater.ipynb
         - file: applications/miscellaneous/ph-dependence-on-contaminants-in-water.ipynb
+        - file: applications/miscellaneous/evian-water-analysis.ipynb
+        - file: applications/miscellaneous/opening-bottel-with-sparkling-water.ipynb
   - caption: About Reaktoro
     chapters:
     - file: about/citing
