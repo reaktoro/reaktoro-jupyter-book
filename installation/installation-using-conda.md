@@ -1,7 +1,7 @@
 # Installation using Conda
 
 Reaktoro can be easily installed using [Conda](https://conda.io/docs/), a
-powerfull package manager used to simplify Reaktoro's installation and the
+powerful package manager used to simplify Reaktoro's installation and the
 management of its external software dependencies. Once you install Conda, and
 append the necessary channels, you'll be able to install Reaktoro by just
 executing the following command in your terminal:

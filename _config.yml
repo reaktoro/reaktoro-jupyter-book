@@ -89,7 +89,7 @@ parse:
       ChemicalProps:           "[`ChemicalProps`](https://reaktoro.org/api/classReaktoro_1_1ChemicalProps.html)"
       ThermoProps:             "[`ThermoProps`](https://reaktoro.org/api/classReaktoro_1_1ThermoProps.html)"
       AqueousProps:            "[`AqueousProps`](https://reaktoro.org/api/classReaktoro_1_1AqueousProps.html)"
-      IonExchangeProps:        "[`IonExchageProps`](https://reaktoro.org/api/classReaktoro_1_1IonExchangeProps.html)"
+      IonExchangeProps:        "[`IonExchangeProps`](https://reaktoro.org/api/classReaktoro_1_1IonExchangeProps.html)"
 
       StandardThermoProps:     "[`StandardThermoProps`](https://reaktoro.org/api/structReaktoro_1_1StandardThermoProps.html)"
       ReactionThermoProps:     "[`ReactionThermoProps`](https://reaktoro.org/api/structReaktoro_1_1ReactionThermoProps.html)"

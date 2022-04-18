@@ -1,7 +1,7 @@
 # Installation using CMake
 
 
-Reaktoro has several software and library dependencies that need to be
+Reaktoro has several external software and library dependencies that need to be
 pre-installed for its successful compilation and installation using
 [CMake](https://cmake.org/). To greatly simplify the building process of
 Reaktoro for Linux, Windows, and macOS, you'll need
@@ -60,7 +60,7 @@ are deloping Reaktoro, make sure you use `git clone` instead.
 ## Installing Reaktoro's software dependencies
 
 Before building Reaktoro, we need to install all software dependencies needed
-during the build process. We do not want, however, all these dependencies poluting our system and possibly causing conflicts and/or corrupting existing software.
+during the build process. We do not want, however, all these dependencies polluting our system and possibly causing conflicts and/or corrupting existing software.
 
 This is achieved by installing all Reaktoro's dependencies in a dedicated [conda environment](https://conda.io/projects/conda/en/latest/user-guide/concepts/environments.html#conda-environments).
 

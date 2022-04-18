@@ -10,7 +10,7 @@ condacolab.install()
 !conda install -y reaktoro
 ~~~
 
-Execute this first cell and you should then be ready to run Reaktoro Jupyter scripts afterwards. Below is a screenshot showing the expected result of this guide.
+Execute this first cell, and you should then be ready to run Reaktoro Jupyter scripts afterwards. Below is a screenshot showing the expected result of this guide.
 
 ![](../images/reaktoro-in-google-colab.png)
 

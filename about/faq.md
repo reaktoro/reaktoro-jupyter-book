@@ -2,7 +2,7 @@
 
 ## What is Reaktoro?
 
-Reaktoro is a project that aims on the long-term to provide all you need for
+Reaktoro is a project that aims at the long-term to provide all you need for
 simulating chemical processes. At the moment, it is available via C++ and
 Python. The library is entirely implemented in C++ for performance reasons.
 Python bindings are generated on top of the C++ interface for a more convenient
@@ -10,12 +10,12 @@ usage. Check the tutorials to see what you can currently do with it.
 
 ## Why is Reaktoro open-source?
 
-Because we believe you should know what goes inside of it and help us with
+Because we believe you should know what goes inside it and help us with
 further development and bug fixes!
 
 ## How can I help with the Reaktoro Project?
 
-In multiple ways, from reporting bugs, to suggesting improvements, writting
+In multiple ways, from reporting bugs, to suggesting improvements, writing
 tutorials, helping with testing, development of algorithms, anything.
 
 Please [get in touch here](mailto:allan.leal@erdw.ethz.ch) if you are
