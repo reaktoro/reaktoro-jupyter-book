@@ -44,7 +44,7 @@ Read the next sections to learn how different thermodynamic databases from disti
 
 ## PHREEQC Databases
 
-[PHREEQC](https://www.usgs.gov/software/phreeqc-version-3) {cite}`Parkhurst2013` is a well-known scientific software used for geochemical and biogeochemical modelling, and many thermodynamic databases have been compiled for it in the last decades. If you'd like to use Reaktoro with PHREEQC databases, we've got you covered. You can do this using a database file available on your computer or one of the following database files embedded into Reaktoro (those provided with PHREEQC v3):
+[PHREEQC](https://www.usgs.gov/software/phreeqc-version-3) {cite}`Parkhurst2013` is a well-known scientific software used for geochemical and biogeochemical modeling, and many thermodynamic databases have been compiled for it in the last decades. If you'd like to use Reaktoro with PHREEQC databases, we've got you covered. You can do this using a database file available on your computer or one of the following database files embedded into Reaktoro (those provided with PHREEQC v3):
 
 * [Amm.dat](https://github.com/reaktoro/reaktoro/tree/main/databases/phreeqc/Amm.dat)
 * [ColdChem.dat](https://github.com/reaktoro/reaktoro/tree/main/databases/phreeqc/ColdChem.dat)
