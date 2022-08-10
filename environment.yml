@@ -14,3 +14,4 @@ dependencies:
     - pandas
     - jupyter-book
     - sphinx-inline-tabs
+    - importlib_metadata
