@@ -5,6 +5,15 @@
 }
 
 
+/* Announcement header */
+
+.header-item.announcement {
+    background-color: #cc4646;
+    color: #fff;
+    padding: .4em 12.5%;
+}
+
+
 /* Acknowledgement below header */
 
 p.acknowledgement {
