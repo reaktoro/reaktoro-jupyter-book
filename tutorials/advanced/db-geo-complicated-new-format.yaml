@@ -1,0 +1,88 @@
+Species:
+  H+:
+    Name: H+
+    Formula: H+
+    Elements: 1:H
+    Charge: 1.0
+    AggregateState: Aqueous
+    StandardThermoModel:
+      Constant:
+        G0: 0.0  # in J/mol
+  OH-:
+    Name: OH-
+    Formula: OH-
+    Elements: 1:O 1:H
+    Charge: -1.0
+    AggregateState: Aqueous
+    StandardThermoModel:
+      Constant:
+        G0: 0.0  # in J/mol
+  CO3-2:
+    Name: CO3-2
+    Formula: CO3-2
+    Elements: 1:C 3:O
+    Charge: -2.0
+    AggregateState: Aqueous
+    StandardThermoModel:
+      Constant:
+        G0: 0.0
+  H2O:
+    Name: H2O
+    Formula: H2O
+    Elements: 2:H 1:O
+    AggregateState: Aqueous
+    FormationReaction:
+      Reactants: 1:H+ 1:OH-
+      ReactionStandardThermoModel:
+        ConstLgK:
+          lgKr: 14.0
+  HCO3-:
+    Name: HCO3-
+    Formula: HCO3-
+    Elements: 1:H 1:C 3:O
+    Charge: -1.0
+    AggregateState: Aqueous
+    FormationReaction:
+      Reactants: 1:CO3-2 1:H+
+      ReactionStandardThermoModel:
+        VantHoff:
+          lgKr: 10.329
+          dHr: -14899.224  # in J/mol
+  CO2:
+    Name: CO2
+    Formula: CO2
+    Elements: 1:H 1:C 3:O
+    AggregateState: Aqueous
+    FormationReaction:
+      Reactants: 1:CO3-2 2:H+ -1:H2O
+      ReactionStandardThermoModel:
+        PhreeqcLgK:
+          A1: 464.1965
+          A2: 0.09344813
+          A3: -26986.16
+          A4: -165.75951
+          A5: 2248628.9
+          A6: 0.0
+  Ca+2:
+    Name: Ca+2
+    Formula: Ca+2
+    Elements: 1:Ca
+    Charge: 2.0
+    AggregateState: Aqueous
+    StandardThermoModel:
+      Interpolation:
+        Temperatures: [298.15, 350.0, 400.0]  # in K
+        Pressures: [1.0e+5, 10.0e+5]          # in Pa
+        G0: [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+        H0: [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+  Calcite:
+    Name: Calcite
+    Formula: CaCO3
+    Elements: 1:Ca 1:C 3:O
+    AggregateState: Solid
+    FormationReaction:
+      Reactants: 1:CO3-2 1:Ca+2
+      ReactionStandardThermoModel:
+        VantHoff:
+          lgKr: 8.48
+          dHr: 10832.376  # in J/mol

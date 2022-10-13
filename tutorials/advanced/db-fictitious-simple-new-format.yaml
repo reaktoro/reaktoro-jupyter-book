@@ -1,0 +1,37 @@
+Elements:
+  A:
+    Symbol: A
+    MolarMass: 0.001  # in kg/mol
+  B:
+    Symbol: B
+    MolarMass: 0.002  # in kg/mol
+
+Species:
+  A+:
+    Name: A+
+    Formula: A+
+    Elements: 1:A
+    Charge: 1.0
+    AggregateState: Gas
+    StandardThermoModel:
+      Constant:
+        G0: 0.0  # in J/mol
+  B-:
+    Name: B-
+    Formula: B-
+    Elements: 1:B
+    Charge: -1.0
+    AggregateState: Gas
+    StandardThermoModel:
+      Constant:
+        G0: 0.0  # in J/mol
+  AB:
+    Name: AB
+    Formula: AB
+    Elements: 1:A 1:B
+    AggregateState: Gas
+    FormationReaction:
+      Reactants: 1:A+ 1:B-
+      ReactionStandardThermoModel:
+        ConstLgK:
+          lgKr: 2.0

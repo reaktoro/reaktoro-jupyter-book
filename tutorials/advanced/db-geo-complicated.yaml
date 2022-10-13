@@ -40,7 +40,7 @@ Species:
   AggregateState: Aqueous
   FormationReaction:
     Reactants: 1:H+ 1:OH-
-    ReactionThermoModel:
+    ReactionStandardThermoModel:
       PhreeqcLgK:
         A1: -293.29227
         A2: -0.1360833
@@ -55,7 +55,7 @@ Species:
   AggregateState: Aqueous
   FormationReaction:
     Reactants: 1:CO3-2 1:H+
-    ReactionThermoModel:
+    ReactionStandardThermoModel:
       VantHoff:
         lgKr: 10.329
         dHr: -14899.224  # in J/mol
@@ -65,7 +65,7 @@ Species:
   AggregateState: Aqueous
   FormationReaction:
     Reactants: 1:CO3-2 2:H+ -1:H2O
-    ReactionThermoModel:
+    ReactionStandardThermoModel:
       ConstLgK:
         lgKr: 16.681
 - Name: Calcite
@@ -74,7 +74,7 @@ Species:
   AggregateState: Solid
   FormationReaction:
     Reactants: 1:CO3-2 1:Ca+2
-    ReactionThermoModel:
+    ReactionStandardThermoModel:
       VantHoff:
         lgKr: 8.48
         dHr: 10832.376  # in J/mol

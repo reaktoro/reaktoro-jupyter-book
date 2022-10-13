@@ -27,6 +27,6 @@ Species:
   AggregateState: Gas
   FormationReaction:
     Reactants: 1:A+ 1:B-
-    ReactionThermoModel:
+    ReactionStandardThermoModel:
       ConstLgK:
         lgKr: 2.0
