@@ -46,19 +46,19 @@ Read the next sections to learn how different thermodynamic databases from disti
 
 [PHREEQC](https://www.usgs.gov/software/phreeqc-version-3) {cite}`Parkhurst2013` is a well-known scientific software used for geochemical and biogeochemical modeling, and many thermodynamic databases have been compiled for it in the last decades. If you'd like to use Reaktoro with PHREEQC databases, we've got you covered. You can do this using a database file available on your computer or one of the following database files embedded into Reaktoro (those provided with PHREEQC v3):
 
-* [Amm.dat](https://github.com/reaktoro/reaktoro/tree/main/databases/phreeqc/Amm.dat)
-* [ColdChem.dat](https://github.com/reaktoro/reaktoro/tree/main/databases/phreeqc/ColdChem.dat)
-* [core10.dat](https://github.com/reaktoro/reaktoro/tree/main/databases/phreeqc/core10.dat)
-* [frezchem.dat](https://github.com/reaktoro/reaktoro/tree/main/databases/phreeqc/frezchem.dat)
-* [iso.dat](https://github.com/reaktoro/reaktoro/tree/main/databases/phreeqc/iso.dat)
-* [llnl.dat](https://github.com/reaktoro/reaktoro/tree/main/databases/phreeqc/llnl.dat)
-* [minteq.dat](https://github.com/reaktoro/reaktoro/tree/main/databases/phreeqc/minteq.dat)
-* [minteq.v4.dat](https://github.com/reaktoro/reaktoro/tree/main/databases/phreeqc/minteq.v4.dat)
-* [phreeqc.dat](https://github.com/reaktoro/reaktoro/tree/main/databases/phreeqc/phreeqc.dat)
-* [pitzer.dat](https://github.com/reaktoro/reaktoro/tree/main/databases/phreeqc/pitzer.dat)
-* [sit.dat](https://github.com/reaktoro/reaktoro/tree/main/databases/phreeqc/sit.dat)
-* [Tipping_Hurley.dat](https://github.com/reaktoro/reaktoro/tree/main/databases/phreeqc/Tipping_Hurley.dat)
-* [wateq4f.dat](https://github.com/reaktoro/reaktoro/tree/main/databases/phreeqc/wateq4f.dat)
+* [Amm.dat](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/phreeqc/Amm.dat)
+* [ColdChem.dat](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/phreeqc/ColdChem.dat)
+* [core10.dat](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/phreeqc/core10.dat)
+* [frezchem.dat](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/phreeqc/frezchem.dat)
+* [iso.dat](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/phreeqc/iso.dat)
+* [llnl.dat](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/phreeqc/llnl.dat)
+* [minteq.dat](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/phreeqc/minteq.dat)
+* [minteq.v4.dat](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/phreeqc/minteq.v4.dat)
+* [phreeqc.dat](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/phreeqc/phreeqc.dat)
+* [pitzer.dat](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/phreeqc/pitzer.dat)
+* [sit.dat](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/phreeqc/sit.dat)
+* [Tipping_Hurley.dat](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/phreeqc/Tipping_Hurley.dat)
+* [wateq4f.dat](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/phreeqc/wateq4f.dat)
 
 ### Loading embedded PHREEQC database files
 
@@ -95,13 +95,13 @@ db = PhreeqcDatabase.fromFile("C:\\Users\\Username\\databases\\phreeqc.dat")
 
 [ThermoFun](https://thermohub.org/thermofun/thermofun/) is an open-source C++/Python library for the computation of thermodynamic properties of species and reactions. It supports many databases for a wide variety of applications. The following are the currently supported database files:
 
-* [aq17-thermofun.json](https://github.com/reaktoro/reaktoro/tree/main/databases/thermofun/aq17-thermofun.json)
-* [cemdata18-thermofun.json](https://github.com/reaktoro/reaktoro/tree/main/databases/thermofun/cemdata18-thermofun.json)
-* [heracles-thermofun.json](https://github.com/reaktoro/reaktoro/tree/main/databases/thermofun/heracles-thermofun.json)
-* [mines16-thermofun.json](https://github.com/reaktoro/reaktoro/tree/main/databases/thermofun/mines16-thermofun.json)
-* [psinagra-12-07-thermofun.json](https://github.com/reaktoro/reaktoro/tree/main/databases/thermofun/psinagra-12-07-thermofun.json)
-* [slop98-organic-thermofun.json](https://github.com/reaktoro/reaktoro/tree/main/databases/thermofun/slop98-organic-thermofun.json)
-* [slop98-thermofun.json](https://github.com/reaktoro/reaktoro/tree/main/databases/thermofun/slop98-thermofun.json)
+* [aq17-thermofun.json](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/thermofun/aq17-thermofun.json)
+* [cemdata18-thermofun.json](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/thermofun/cemdata18-thermofun.json)
+* [heracles-thermofun.json](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/thermofun/heracles-thermofun.json)
+* [mines16-thermofun.json](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/thermofun/mines16-thermofun.json)
+* [psinagra-12-07-thermofun.json](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/thermofun/psinagra-12-07-thermofun.json)
+* [slop98-organic-thermofun.json](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/thermofun/slop98-organic-thermofun.json)
+* [slop98-thermofun.json](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/thermofun/slop98-thermofun.json)
 
 ### Loading embedded ThermoFun database files
 
@@ -154,10 +154,10 @@ SUPCRT and SUPCRTBL databases are supported in Reaktoro's database format using
 [YAML](https://yaml.org/). The currently available embedded database files are
 listed below:
 
-* [supcrt98.yaml](https://github.com/reaktoro/reaktoro/tree/main/databases/reaktoro/supcrt98.yaml)
-* [supcrt07.yaml](https://github.com/reaktoro/reaktoro/tree/main/databases/reaktoro/supcrt07.yaml)
-* [supcrt16.yaml](https://github.com/reaktoro/reaktoro/tree/main/databases/reaktoro/supcrt16.yaml)
-* [supcrtbl.yaml](https://github.com/reaktoro/reaktoro/tree/main/databases/reaktoro/supcrtbl.yaml)
+* [supcrt98.yaml](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/reaktoro/supcrt98.yaml)
+* [supcrt07.yaml](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/reaktoro/supcrt07.yaml)
+* [supcrt16.yaml](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/reaktoro/supcrt16.yaml)
+* [supcrtbl.yaml](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/reaktoro/supcrtbl.yaml)
 
 The following are equivalent ways to load the same embedded SUPCRT/SUPCRTBL database file:
 
@@ -194,7 +194,7 @@ Reaktoro also supports the NASA-CEA thermochemical database {cite}`Gordon1994a,G
 
 The NASA-CEA database supported in Reaktoro has been converted to Reaktoro's YAML database format:
 
-* [nasa-cea.yaml](https://github.com/reaktoro/reaktoro/tree/main/databases/reaktoro/nasa-cea.yaml).
+* [nasa-cea.yaml](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/reaktoro/nasa-cea.yaml).
 
 This file was constructed by parsing the [original NASA-CEA thermochemical database file](https://github.com/reaktoro/reaktoro/tree/main/utilities/nasa-parser/nasa-cea.dat) and converting it to Reaktoro's YAML format.
 
