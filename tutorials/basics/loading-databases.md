@@ -151,13 +151,26 @@ SUPCRT {cite}`Johnson1992` and SUPCRTBL {cite}`Zimmer2016a` databases contain th
 ### Loading embedded SUPCRT and SUPCRTBL database files
 
 SUPCRT and SUPCRTBL databases are supported in Reaktoro's database format using
-[YAML](https://yaml.org/). The currently available embedded database files are
-listed below:
+[YAML](https://yaml.org/). The currently available embedded database files are listed below:
 
+**Without organics aqueous species**
 * [supcrt98.yaml](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/reaktoro/supcrt98.yaml)
 * [supcrt07.yaml](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/reaktoro/supcrt07.yaml)
 * [supcrt16.yaml](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/reaktoro/supcrt16.yaml)
 * [supcrtbl.yaml](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/reaktoro/supcrtbl.yaml)
+
+**With organics aqueous species**
+* [supcrt98-organics.yaml](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/reaktoro/supcrt98-organics.yaml)
+* [supcrt07-organics.yaml](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/reaktoro/supcrt07-organics.yaml)
+* [supcrt16-organics.yaml](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/reaktoro/supcrt16-organics.yaml)
+* [supcrtbl-organics.yaml](https://github.com/reaktoro/reaktoro/tree/main/embedded/databases/reaktoro/supcrtbl-organics.yaml)
+
+```{note}
+Reaktoro provides SUPCRT and SUPCRTBL databases with and without organic species because, as we will
+see see later, when creating a chemical system with automatic selection of species based on a given
+list of chemical elements, a large number of aqueous organic species are selected and, in many
+cases, these species do not play any important role in the modeling.
+```
 
 The following are equivalent ways to load the same embedded SUPCRT/SUPCRTBL database file:
 
