@@ -1,2 +1,11 @@
+# Build files
 _build
+
+# Visual Studio Code related files
 .history/
+
+# Output files produced from running the notebooks
+tutorials/**/*.txt
+tutorials/**/*.pdf
+applications/**/*.txt
+applications/**/*.pdf
