@@ -31,7 +31,5 @@ Reaktoro can also be used within other software applications (e.g., reservoir si
 
 For these large-scale modeling applications, in which millions to billions of chemical equilibrium and/or chemical kinetics calculations are needed, Reaktoro offers *on-demand machine learning* (ODML) accelerated solvers that can speed up the chemical reaction calculations by one to three orders of magnitude as demonstrated in {cite:t}`Leal2017b`, {cite:t}`Leal2020` and {cite:t}`Kyas2022`.
 
-## Quick Links!
-
 ```{tableofcontents}
 ```
