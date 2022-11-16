@@ -11,6 +11,7 @@
     background-color: #cc4646;
     color: #fff;
     padding: .4em 12.5%;
+    font-weight: 400;
 }
 
 
@@ -39,4 +40,29 @@ div.cell div.cell_input {
 
 main.bd-content #main-content p~div.math {
     margin-top: 0px;
+}
+
+
+/* Adjust bullets, indentation, and links in toctree  */
+
+.toctree-wrapper ul {
+    padding-left: 16px;
+}
+
+.toctree-wrapper li.toctree-l1 {
+    list-style-type: square;
+}
+
+.toctree-wrapper li.toctree-l2 {
+    list-style-type: none;
+}
+
+.toctree-wrapper a {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.toctree-wrapper a:hover {
+    text-decoration: none;
+    font-weight: 700;
 }
