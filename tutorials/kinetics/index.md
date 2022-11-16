@@ -1,3 +1,6 @@
 # Chemical Kinetics
 
-In the making. Stay tuned!
+Find below a list of tutorials using Reaktoro for chemical kinetics calculations.
+
+```{tableofcontents}
+```
