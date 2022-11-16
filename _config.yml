@@ -111,6 +111,18 @@ parse:
       EquilibriumOptions:      "[`EquilibriumOptions`](https://reaktoro.org/api/structReaktoro_1_1EquilibriumOptions.html)"
       EquilibriumResult:       "[`EquilibriumResult`](https://reaktoro.org/api/structReaktoro_1_1EquilibriumResult.html)"
 
+      KineticsResult:          "[`KineticsResult`](https://reaktoro.org/api/structReaktoro_1_1KineticsResult.html)"
+      KineticsSensitivity:     "[`KineticsSensitivity`](https://reaktoro.org/api/structReaktoro_1_1KineticsSensitivity.html)"
+      KineticsSolver:          "[`KineticsSolver`](https://reaktoro.org/api/structReaktoro_1_1KineticsSolver.html)"
+
+      SmartEquilibriumOptions: "[`SmartEquilibriumOptions`](https://reaktoro.org/api/structReaktoro_1_1SmartEquilibriumOptions.html)"
+      SmartEquilibriumResult:  "[`SmartEquilibriumResult`](https://reaktoro.org/api/structReaktoro_1_1SmartEquilibriumResult.html)"
+      SmartEquilibriumSolver:  "[`SmartEquilibriumSolver`](https://reaktoro.org/api/structReaktoro_1_1SmartEquilibriumSolver.html)"
+
+      SmartKineticsOptions:    "[`SmartKineticsOptions`](https://reaktoro.org/api/structReaktoro_1_1SmartKineticsOptions.html)"
+      SmartKineticsResult:     "[`SmartKineticsResult`](https://reaktoro.org/api/structReaktoro_1_1SmartKineticsResult.html)"
+      SmartKineticsSolver:     "[`SmartKineticsSolver`](https://reaktoro.org/api/structReaktoro_1_1SmartKineticsSolver.html)"
+
       ElementList:             "[`ElementList`](https://reaktoro.org/api/classReaktoro_1_1ElementList.html)"
       PhaseList:               "[`PhaseList`](https://reaktoro.org/api/classReaktoro_1_1PhaseList.html)"
       SpeciesList:             "[`SpeciesList`](https://reaktoro.org/api/classReaktoro_1_1SpeciesList.html)"
@@ -129,5 +141,10 @@ parse:
       WaterHelmholtzProps:     "[`WaterHelmholtzProps`](https://reaktoro.org/api/structReaktoro_1_1WaterHelmholtzProps.html)"
 
       equilibrate:             "[`equilibrate`](https://reaktoro.org/api/namespaceReaktoro.html#a286e2972325304934d631234abef9e87)"
+
+      Table:                   "[`Table`](https://reaktoro.org/api/classReaktoro_1_1Table.html)"
+
+      MineralSurface:          "[`MineralSurface`](https://reaktoro.org/api/classReaktoro_1_1MineralSurface.html)"
+      MineralReactions:        "[`MineralReactions`](https://reaktoro.org/api/classReaktoro_1_1MineralReactions.html)"
 
       Material:                "[`Material`](https://reaktoro.org/api/classReaktoro_1_1Material.html)"
