@@ -5,13 +5,14 @@ channels:
 
 dependencies:
   - reaktoro
+  - reaktplot
   - pip
   - pip:
-    - numpy
-    - numba
-    - matplotlib
     - bokeh
-    - pandas
-    - jupyter-book
-    - sphinx-inline-tabs
     - importlib_metadata
+    - jupyter-book
+    - matplotlib
+    - numba
+    - numpy
+    - pandas
+    - sphinx-inline-tabs
