@@ -38,7 +38,7 @@ html:
   home_page_in_navbar: false
   use_issues_button: true
   use_repository_button: true
-  announcement: 🚀 Reaktoro v2.0 is out! This is the result of intense work over the last three years. Please let us know how to improve it! Reaktoro is open source and free for all.
+  announcement: 🚀 Reaktoro v2.0 is finally out, after so many release candidates! This is the result of intense work over the last three years. Please let us know how to improve Reaktoro, an open source code free for all!
 
 # Sphinx configurations
 sphinx:
