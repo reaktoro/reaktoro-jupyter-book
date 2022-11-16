@@ -43,7 +43,7 @@ You can use the method `asarray` in these array/vector types to convert them to 
 state.speciesAmounts().asarray()
 ~~~
 
-# SIGFPE signals and fatal arithmetic errors
+## SIGFPE signals and fatal arithmetic errors
 
 Users that couple Reaktoro's C++ library and [OpenFOAM](https://www.openfoam.com/) for reactive transport simulations often report problems related to [SIGFPE signals](https://en.cppreference.com/w/cpp/numeric/fenv) that are thrown following arithmetic exceptions (e.g., division by zero, logarithm of zero, etc.). Usually these errors happen in Reaktoro because some species in the chemical state have zero values (always try to set a very small amount instead of zero!), and during a chemical equilibrium or kinetic calculation the logarithm of zero may be evaluated. These arithmetic errors, however, do not compromise the calculation results and are ignored in Reaktoro when they occur.
 
