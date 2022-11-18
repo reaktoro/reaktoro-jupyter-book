@@ -1,5 +1,7 @@
 # Development
 
+<p class="acknowledgement">Written by Allan Leal (ETH Zurich) on Nov 18th, 2022</p>
+
 Here we provide tips in case you want to help with Reaktoro development.
 Reaktoro is primarily developed using [Visual Studio Code][vscode] on Linux. If you are on Windows, consider using the *Windows Subsystem for Linux (WSL) with Ubuntu* by following these [installation instructions][wsl-ubuntu] provided by Canonical<sup>®</sup>.
 
