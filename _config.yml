@@ -51,6 +51,9 @@ sphinx:
     - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js  # needed to get plotly plots rendered (https://jupyterbook.org/en/stable/interactive/interactive.html#plotly)
 
 parse:
+  myst_enable_extensions:
+    - deflist
+
   myst_substitutions:
       Gitter: "[Gitter](https://gitter.im/reaktoro/community)"
       autodiff: "[autodiff](https://autodiff.github.io)"
