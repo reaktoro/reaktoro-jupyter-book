@@ -119,14 +119,145 @@ cmake ../../.. -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS="-fuse-ld=lld"
 ~~~
 ```
 
-## Creating run tasks for Reaktoro's tests and examples
+## Creating run and debug tasks for Reaktoro's tests and examples
+
+When doing Reaktoro development, you may want to debug:
+
+* a C++ test *e.g., the C++ test for class {{ChemicalSystem }} implemented in [`ChemicalSystem.test.cxx`]*
+* a C++ example *e.g., one of these [C++ examples]*
+* a Python test *e.g., the Python test for class {{ChemicalSystem }} implemented in [`ChemicalSystem.py`]*
+* a Python example *e.g., one of these [Python examples]*
+
+Pressing `Ctrl+Shift+D` in Visual Studio Code allows you to execute and debug an application. You'll need first to click on `create a launch.json` and then select any shown option. Once the `launch.json` file is created, replace its content by:
+
+~~~json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug C++ Tests",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/debug/gcc/Reaktoro/reaktoro-cpptests",
+            "args": ["[ChemicalSystem]"],
+            "preLaunchTask": "Build",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "Debug C++ Example",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/debug/gcc/examples/cpp/${fileBasenameNoExtension}",
+            "preLaunchTask": "Build",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "Debug Python Tests",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${env:CONDA_PREFIX}/bin/python",
+            "args": ["-m", "pytest", "Reaktoro/Core/ChemicalSystem.py"],
+            "preLaunchTask": "Build",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [
+                {
+                    "name": "PYTHONPATH",
+                    "value": "${workspaceFolder}/build/debug/gcc/python/package/build/lib:${env:PYTHONPATH}"
+                }
+            ],
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "Debug Python/C++ Script",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${env:CONDA_PREFIX}/bin/python",
+            "args": ["${file}"],
+            "preLaunchTask": "Build",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [
+                {
+                    "name": "PYTHONPATH",
+                    "value": "${workspaceFolder}/build/debug/gcc/python/package/build/lib:${env:PYTHONPATH}"
+                }
+            ],
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
+~~~
+
+When you press `Ctrl+Shift+D`, you are taken to the **Run and Debug** pane. On the top, you should now have a checkbox showing the options:
+
+```{image} ../images/general/vscode-run-and-debug-options.png
+:alt: Options in Run and Debug in Visual Studio Code
+:align: center
+```
+
+Now you can select one of them and start debugging. You can adjust the above configuration file as needed.
+
+Debugging different C++ tests
+: In the `Debug C++ Tests` configuration, replace `[ChemicalSystem]` by `[EquilibriumSolver]` or any other C++ test.
+
+Debugging different C++ examples
+: Make sure you have the C++ example open in the editor and press `F5`. Alternatively, replace `${fileBasenameNoExtension}` in the `Debug C++ Example` configuration above with the name of the C++ example you want to debug so that you don't need to have the C++ file open at the time `F5` is pressed.
+
+Debugging different Python tests
+: In the `Debug Python Tests` configuration, replace `Reaktoro/Core/ChemicalSystem.py` by `Reaktoro/Equilibrium/EquilibriumSolver.py` or any other Python test file.
+
+Debugging different Python examples
+: Make sure you have the Python example open in the editor and press `F5`. Alternatively, replace `${file}` in the `Debug Python/C++ Script` configuration above with the path to the Python file you want to debug so that you don't need to have the Python file open at the time `F5` is pressed.
+
+    ```{attention}
+    Note that this actually debugs the Reaktoro C++ extension for Python. In other words, this configuration allows you to debug Reaktoro C++ code that is running from a Python script. This is not for debugging a Python script!
+    ```
+
+And that's it for now. More development recommendations will be added in the futur as needed. If you are encountering issues with the tips above, [please get in touch](mailto:allan.leal@erdw.ethz.ch).
 
 
-
+[`ChemicalSystem.py`]: https://github.com/reaktoro/reaktoro/blob/main/Reaktoro/Core/ChemicalSystem.py
+[`ChemicalSystem.test.cxx`]: https://github.com/reaktoro/reaktoro/blob/main/Reaktoro/Core/ChemicalSystem.test.cxx
+[C++ examples]: https://github.com/reaktoro/reaktoro/tree/main/examples/cpp
+[conda]: https://docs.conda.io/en/latest/
+[Python examples]: https://github.com/reaktoro/reaktoro/tree/main/examples/python
+[vscode-c_cpp_properties]: https://github.com/reaktoro/reaktoro/blob/main/utilities/vscode-utils/.vscode-template/c_cpp_properties.json
+[vscode-launch]: https://github.com/reaktoro/reaktoro/blob/main/utilities/vscode-utils/.vscode-template/launch.json
+[vscode-tasks]: https://github.com/reaktoro/reaktoro/blob/main/utilities/vscode-utils/.vscode-template/tasks.json
 [vscode]: https://code.visualstudio.com/
 [wsl-ubuntu]: https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview
-[conda]: https://docs.conda.io/en/latest/
-
-[vscode-tasks]: https://github.com/reaktoro/reaktoro/blob/main/utilities/vscode-utils/.vscode-template/tasks.json
-[vscode-launch]: https://github.com/reaktoro/reaktoro/blob/main/utilities/vscode-utils/.vscode-template/launch.json
-[vscode-c_cpp_properties]: https://github.com/reaktoro/reaktoro/blob/main/utilities/vscode-utils/.vscode-template/c_cpp_properties.json
