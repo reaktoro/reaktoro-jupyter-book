@@ -107,7 +107,7 @@ cmake -S . -B build
 ~~~
 
 ```{admonition} Speed up linking time in Linux and macOS
-The created conda environment `reaktoro` on Linux and macOS should contain the [LLVM linker `lld`](https://lld.llvm.org/) which has been shown to be significantly faster than the [GNU linker `ld`] ( https://linux.die.net/man/1/ld) when linking Reaktoro's C++ library, tests, examples and Python module.
+The created conda environment `reaktoro` on Linux and macOS should contain the [LLVM linker `lld`](https://lld.llvm.org/) which has been shown to be significantly faster than the [GNU linker `ld`](https://linux.die.net/man/1/ld) when linking Reaktoro's C++ library, tests, examples and Python module.
 
 To enable it, execute the following cmake configure command instead of the previous one:
 
