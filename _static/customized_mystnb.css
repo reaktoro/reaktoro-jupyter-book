@@ -66,3 +66,17 @@ main.bd-content #main-content p~div.math {
     text-decoration: none;
     font-weight: 700;
 }
+
+
+/* Indicate link is external */
+
+a.reference.external:after {
+    /* content: "\f35d"; */
+    /* font-family: 'Font Awesome 6 Free'; */
+    content: "↗";
+    vertical-align: text-top;
+    font-size: .7em;
+    margin-left: .1em;
+    font-family: 'Sans';
+    /* color: #cc4646; */
+}
