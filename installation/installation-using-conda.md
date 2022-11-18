@@ -161,7 +161,5 @@ pip install numba
 
 # Please help me installing Reaktoro!
 
-If you are having a hard time installing Reaktoro via `conda`, please get in
-touch via [Gitter](https://gitter.im/reaktoro/community). Please make sure you
-have already tried investigating the issue before contacting us there, as it
-may be just a common `conda` issue for which a solution already exists!
+If you are having a hard time installing Reaktoro via `conda`,
+[please contact us](mailto:allan.leal@erdw.ethz.ch)
