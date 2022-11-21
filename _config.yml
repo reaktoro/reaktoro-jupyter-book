@@ -47,6 +47,7 @@ sphinx:
   config:
     pygments_style: material
     bibtex_reference_style: author_year
+    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
     html_js_files:
     - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js  # needed to get plotly plots rendered (https://jupyterbook.org/en/stable/interactive/interactive.html#plotly)
 
