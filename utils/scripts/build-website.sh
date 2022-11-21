@@ -16,7 +16,7 @@ eval "$(conda shell.bash hook)"
 # =============================================================================
 conda activate reaktoro-jupyter-book
 
-jupyter-book build $root_dir
+jupyter-book build $root_dir --all
 
 # =============================================================================
 # Build Reaktoro v1 website (documentation + API reference)
