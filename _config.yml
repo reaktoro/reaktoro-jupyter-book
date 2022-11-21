@@ -52,8 +52,20 @@ sphinx:
     - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js  # needed to get plotly plots rendered (https://jupyterbook.org/en/stable/interactive/interactive.html#plotly)
 
 parse:
-  myst_enable_extensions:
+  myst_enable_extensions:  # Optional MyST extensions https://myst-parser.readthedocs.io/en/latest/syntax/optional.html
+    - amsmath
+    # - colon_fence
     - deflist
+    - dollarmath
+    # - fieldlist
+    - html_admonition
+    - html_image
+    # - linkify
+    # - replacements
+    # - smartquotes
+    # - strikethrough
+    - substitution
+    - tasklist
 
   myst_substitutions:
       Gitter: "[Gitter](https://gitter.im/reaktoro/community)"
