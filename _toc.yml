@@ -48,7 +48,7 @@ parts:
       - file: tutorials/kinetics/index
         sections:
         - file: tutorials/kinetics/kinetics-basics.ipynb
-
+        - file: tutorials/kinetics/kinetics-minerals-using-palandri-kharaka-model.ipynb
 
       - file: tutorials/machine-learning/index
         sections:
