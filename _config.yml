@@ -81,6 +81,7 @@ parse:
       _7: <sub>7</sub>
       _8: <sub>8</sub>
       _9: <sub>9</sub>
+      cdot: ·
       bibliography: |
         ```{bibliography}
         :style: unsrt
@@ -159,6 +160,7 @@ parse:
       equilibrate:             "[`equilibrate`](https://reaktoro.org/api/namespaceReaktoro.html#a286e2972325304934d631234abef9e87)"
 
       Table:                   "[`Table`](https://reaktoro.org/api/classReaktoro_1_1Table.html)"
+      Params:                  "[`Params`](https://reaktoro.org/api/classReaktoro_1_1Params.html)"
 
       MineralSurface:          "[`MineralSurface`](https://reaktoro.org/api/classReaktoro_1_1MineralSurface.html)"
       MineralReactions:        "[`MineralReactions`](https://reaktoro.org/api/classReaktoro_1_1MineralReactions.html)"
