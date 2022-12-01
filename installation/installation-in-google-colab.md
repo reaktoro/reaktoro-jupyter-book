@@ -5,8 +5,9 @@ You can run Reaktoro in [Google Colab](https://colab.research.google.com/). Crea
 ~~~
 !pip install -q condacolab
 import condacolab
-condacolab.install()
-!conda install -y reaktoro
+condacolab.install_from_url("https://repo.anaconda.com/miniconda/Miniconda3-py38_4.12.0-Linux-x86_64.sh")
+!conda config --add channels conda-forge
+!conda install reaktoro -y
 ~~~
 
 Execute this first cell, and then the code below in a new cell:
@@ -31,7 +32,7 @@ equilibrate(state)
 print(state)
 ~~~
 
-Below is a screenshot showing the expected result of this guide when following the previous instructions:
+Here is a [shared link to a Google Colab notebook](https://colab.research.google.com/drive/13UsI3Tj0ZRX6ea8_xoezry6mO0Ghq-vV?usp=sharing) demonstrating this guide. We also show below a screenshot showing the expected result of this guide when following the previous instructions (with cleared output for the first cell because it's too long):
 
 ![](../images/reaktoro-in-google-colab.png)
 
