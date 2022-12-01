@@ -36,7 +36,7 @@ cd build
 conda activate reaktoro-v1
 cmake ..
 make website
-cp -r docs/website $html_dir/v1
+cp -r docs/website/* $html_dir/v1
 
 # =============================================================================
 # Build Reaktoro v2 API reference
@@ -56,4 +56,5 @@ cd build
 conda activate reaktoro
 cmake ..
 make docs
-cp -r docs/html $html_dir/api
+rm -rf $html_dir/api/*
+cp -r docs/html/* $html_dir/api
