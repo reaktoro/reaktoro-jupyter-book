@@ -11,6 +11,7 @@ logo: images/reaktoro-for-python-and-cpp.svg
 execute:
   execute_notebooks: cache
   timeout: 100
+  google_analytics_id       : "G-PK3LGVLSKH"  # A GA id that can be used to track book views.
 # Define the name of the latex output file for PDF builds
 latex:
   latex_documents:
