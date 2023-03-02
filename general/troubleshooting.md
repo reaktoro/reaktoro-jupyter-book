@@ -62,7 +62,7 @@ int main()
     PhreeqcDatabase db("phreeqc.dat");
 
     AqueousPhase aqueousphase(speciate("H O C Na Cl"));
-    aqueousphase.setActivityModel(ActivityModelPitzerHMW());
+    aqueousphase.setActivityModel(ActivityModelPitzer());
 
     GaseousPhase gaseousphase("CO2(g)");
     gaseousphase.setActivityModel(ActivityModelPengRobinson());
