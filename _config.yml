@@ -3,7 +3,7 @@
 #==================================================================================================
 title: ""  # leave this empty - only logo Reaktoro for Python and C++ to be used
 author: ""  # leave this empty for now too
-copyright: "2022"
+copyright: "2023"
 logo: images/reaktoro-for-python-and-cpp.svg
 
 exclude_patterns: [_build, .history]  # exclude the following directories from search for markdown files

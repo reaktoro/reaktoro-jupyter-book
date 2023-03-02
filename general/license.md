@@ -1,6 +1,6 @@
 # License
 
-Copyright © 2014-2022 Allan Leal
+Copyright © 2014-2023 Allan Leal
 
 Reaktoro is free software; you can redistribute it and/or modify it under the
 terms of the GNU Lesser General Public License as published by the Free
