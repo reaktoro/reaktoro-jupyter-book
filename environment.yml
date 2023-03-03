@@ -7,7 +7,7 @@ dependencies:
   - bokeh=2
   - importlib_metadata
   - jsonschema-with-format-nongpl
-  - jupyter-book
+  - jupyter-book=0.13.2
   - matplotlib-base
   - numba
   - numpy
