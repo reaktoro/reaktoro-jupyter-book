@@ -4,16 +4,18 @@ channels:
   - conda-forge
 
 dependencies:
+  - bokeh=2
+  - importlib_metadata
+  - jsonschema-with-format-nongpl
+  - jupyter-book
+  - matplotlib-base
+  - numba
+  - numpy
+  - pandas
+  - pip
   - python=3.10
   - reaktoro
   - reaktplot
-  - pip
-  - pip:
-    - bokeh
-    - importlib_metadata
-    - jupyter-book
-    - matplotlib
-    - numba
-    - numpy
-    - pandas
-    - sphinx-inline-tabs
+  - sphinx-book-theme
+  - sphinx-inline-tabs
+  - webcolors
