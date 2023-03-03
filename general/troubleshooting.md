@@ -2,7 +2,7 @@
 
 Below are the most common issues our users encounter, for which we indicate the necessary action to resolve them potentially. If you cannot find your problem below or the solution provided is not working for you, don't hesitate to get in touch with us at {{Gitter}}.
 
-## ModuleNotFoundError: No module named 'reaktoro'
+```{dropdown} ModuleNotFoundError: No module named 'reaktoro'
 
 The entire error message may be something like this:
 
@@ -13,8 +13,9 @@ ModuleNotFoundError: No module named 'reaktoro'
 ~~~
 
 This error is happening because the Python package `reaktoro` cannot be found, most likely because the environment variable `PYTHONPATH` has not been set correctly. Ensure the path where `reaktoro` is located is specified in `PYTHONPATH`.
+```
 
-## Expecting a float value but got autodiff.real instead
+```{dropdown} Expecting a float value but got autodiff.real instead
 
 Reaktoro relies on number types defined in the {{autodiff}} library to enable automatic differentiation. It is because of {{autodiff}} that Reaktoro can have improved numerical algorithms and also compute derivatives of chemical/thermodynamic properties with respect to temperature, pressure, species amounts, and even the parameters used in the models.
 
@@ -24,8 +25,9 @@ You can use the `float` function to convert an `autodiff.real` number into a Pyt
 # convert autodiff.real to float!
 float(state.speciesAmount("CO2"))
 ~~~
+```
 
-## Expecting a numpy.array but got autodiff.ArrayXreal or autodiff.VectorXreal instead
+```{dropdown} Expecting a numpy.array but got autodiff.ArrayXreal or autodiff.VectorXreal instead
 
 This is a similar issue to the previous one. You may encounter the following array/vector types while using Reaktoro:
 
@@ -42,8 +44,9 @@ You can use the method `asarray` in these array/vector types to convert them to 
 # convert from autodiff.ArrayXreal1stConstRef to numpy.array with float values
 state.speciesAmounts().asarray()
 ~~~
+```
 
-## SIGFPE signals and fatal arithmetic errors
+```{dropdown} SIGFPE signals and fatal arithmetic errors
 
 Users that couple Reaktoro's C++ library and [OpenFOAM](https://www.openfoam.com/) for reactive transport simulations often report problems related to [SIGFPE signals](https://en.cppreference.com/w/cpp/numeric/fenv) that are thrown following arithmetic exceptions (e.g., division by zero, logarithm of zero, etc.). Usually these errors happen in Reaktoro because some species in the chemical state have zero values (always try to set a very small amount instead of zero!), and during a chemical equilibrium or kinetic calculation the logarithm of zero may be evaluated. These arithmetic errors, however, do not compromise the calculation results and are ignored in Reaktoro when they occur.
 
@@ -85,3 +88,4 @@ int main()
     return 0;
 }
 ~~~
+```
