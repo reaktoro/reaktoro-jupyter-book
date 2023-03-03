@@ -16,6 +16,9 @@ eval "$(conda shell.bash hook)"
 # =============================================================================
 conda activate reaktoro-jupyter-book
 
+# Ensure custom pygment lexers for Python and C++ are installed in the activated conda environment
+$root_dir/utils/scripts/replace-pygments-lexers.sh
+
 jupyter-book build $root_dir --all
 
 # =============================================================================
@@ -36,6 +39,7 @@ cd build
 conda activate reaktoro-v1
 cmake ..
 make website
+mkdir -p $html_dir/v1
 cp -r docs/website/* $html_dir/v1
 
 # =============================================================================
@@ -56,5 +60,6 @@ cd build
 conda activate reaktoro
 cmake ..
 make docs
+mkdir -p $html_dir/api
 rm -rf $html_dir/api/*
 cp -r docs/html/* $html_dir/api
