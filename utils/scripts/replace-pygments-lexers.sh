@@ -12,5 +12,5 @@ echo $pygments_dir
 cp $pygments_dir/lexers/python.py $pygments_dir/lexers/python-bkp.py
 cp $pygments_dir/lexers/c_cpp.py $pygments_dir/lexers/c_cpp-bkp.py
 
-cp $script_dir/python.py $pygments_dir/lexers
-cp $script_dir/c_cpp.py $pygments_dir/lexers
+cp $script_dir/../lexers/python.py $pygments_dir/lexers
+cp $script_dir/../lexers/c_cpp.py $pygments_dir/lexers
