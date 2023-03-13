@@ -20,7 +20,7 @@ Conda can be installed by installing either
 [Miniconda](https://conda.io/miniconda.html). We recommend the installation of
 Miniconda, unless you already have Anaconda installed or you think you need
 thousands of software packages that ship with it! Miniconda is just a tiny
-subset of Anaconda containing only our needed `conda` application and its
+a subset of Anaconda containing only our needed `conda` application and its
 dependencies.
 
 Download the appropriate [Miniconda
@@ -48,10 +48,10 @@ All should now be set to install Reaktoro using:
 conda install reaktoro
 ~~~
 
-but you may want to follow the recommendation in the next section to install
-Reaktoro in a new conda environment instead of the default `base` environment.
+but you may want to follow the recommendation in the next section to install Reaktoro in a new conda environment instead of the default `base` environment.
 
-## Install Reaktoro in a new conda environment (optional)
+(installing_reaktoro_new_conda_env)=
+## Installing Reaktoro in a new conda environment (recommended)
 
 Now that you have `conda` installed, either via Anaconda or Miniconda, you may
 want to create a *conda environment* in which the Python package `reaktoro` is
@@ -159,7 +159,42 @@ pip install numba
 ~~~
 ```
 
-# Please help me installing Reaktoro!
+(updating_reaktoro_via_conda)=
+## Updating Reaktoro using Conda
 
-If you are having a hard time installing Reaktoro via `conda`,
-[please contact us](mailto:allan.leal@erdw.ethz.ch)
+You should update Reaktoro frequently to take advantage of new features and improvements as they are released. It's also important to consider that the errors you experience may be the result of using an older version that doesn't contain a capability that you recently learned about on this website.
+
+Assuming you've installed the `reaktoro` package in the recommended `rkt` conda environment, please execute the following commands in the terminal to update it:
+
+~~~
+conda activate rkt
+conda update reaktoro
+~~~
+
+Double-check that the updated version is the [latest available version of Reaktoro](https://anaconda.org/conda-forge/reaktoro). If not, you might want to run the following command:
+
+~~~
+conda install reaktoro=X.Y.Z
+~~~
+
+where `X.Y.Z` is the latest version.
+
+It may happen that conda refuses to update `reaktoro` to its latest version. This refusal can happen if you have installed additional packages in the `rkt` environment that potentially conflict with the latest version of `reaktoro`. In this case, you might want to remove the `rkt` environment and create it from scratch:
+
+~~~
+conda env remove --name rkt
+conda create --name rkt reaktoro
+~~~
+
+Alternatively, you can create a new conda environment (e.g. `rkt-latest`) with the latest version of Reaktoro installed by default:
+
+~~~
+conda create --name rkt-latest reaktoro
+~~~
+
+In this case, remember to activate the `rkt-latest` conda environment when using Reaktoro and not `rkt`!
+
+## Please help me install Reaktoro!
+
+If you are having difficulties installing Reaktoro via `conda`, [contact
+us](mailto:allan.leal@erdw.ethz.ch)

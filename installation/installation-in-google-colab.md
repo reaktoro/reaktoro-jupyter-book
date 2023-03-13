@@ -41,6 +41,6 @@ Here is a [shared link to a Google Colab notebook](https://colab.research.google
 
 ![](../images/reaktoro-in-google-colab.png)
 
-# Please help me installing Reaktoro!
+## Please help me installing Reaktoro!
 
 If you had any problems with the instructions above (or for some reason this is not working at the moment), [please contact us](mailto:allan.leal@erdw.ethz.ch).

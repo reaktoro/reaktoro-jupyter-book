@@ -283,7 +283,7 @@ cmake --build build --config Release --target install
 This step will install Reaktoro's C++ header files, libraries, executables,
 and the Python package `reaktoro` in the specified installation path.
 
-# Please help me installing Reaktoro!
+## Please help me installing Reaktoro!
 
 If you have problems with the instructions above and after investigating the
 problem even more, you couldn't find a solution (for example, it might just be a
