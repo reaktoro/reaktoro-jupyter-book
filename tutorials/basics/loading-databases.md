@@ -2,6 +2,10 @@
 
 <p class="acknowledgement">Written by Allan Leal (ETH Zurich) on Jan 5th, 2022
 
+```{attention}
+Always make sure you are using the [latest version of Reaktoro](https://anaconda.org/conda-forge/reaktoro). Otherwise, some new features documented on this website will not work on your machine and you may receive unintuitive errors. Follow these [update instructions](updating_reaktoro_via_conda) to get the latest version of Reaktoro!
+```
+
 Reaktoro requires thermodynamic databases to calculate the thermodynamic properties of chemical species and reactions. These properties are necessary when performing chemical equilibrium and kinetics calculations.
 
 Examples of such thermodynamic properties for a species $i$ include:
