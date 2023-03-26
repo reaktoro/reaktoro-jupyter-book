@@ -14,7 +14,7 @@ dependencies:
   - pandas
   - pip
   - python=3.10
-  - reaktoro
+  - reaktoro>=2.6.0
   - reaktplot
   - sphinx-book-theme
   - sphinx-inline-tabs
