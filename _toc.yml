@@ -58,6 +58,8 @@ parts:
       - file: tutorials/miscellaneous/index
         sections:
         - file: tutorials/miscellaneous/defining-materials
+        - file: tutorials/miscellaneous/thermofun-cement-simulation-with-solid-solutions.ipynb
+        - file: tutorials/miscellaneous/thermofun-uraniun-solubility-vs-pH.ipynb
 
       - file: tutorials/advanced/index
         sections:
@@ -80,19 +82,16 @@ parts:
         - file: applications/exchange/ion-exchange-mix-porewater-extractant.ipynb
         - file: applications/exchange/ion-exchange-cax2-nax-kx-vs-changing-ca-k.ipynb
         - file: applications/exchange/ion-exchange-calcite-cax-vs-ph.ipynb
-    - file: applications/thermofun/index
       sections:
-        - file: applications/thermofun/thermofun-cement-simulation-with-solid-solutions.ipynb
-        - file: applications/thermofun/thermofun-uraniun-solubility-vs-pH.ipynb
     - file: applications/biomass-gasification/index
       sections:
         - file: applications/biomass-gasification/biomass-gasification.ipynb
-    - file: applications/miscellaneous/index
+    - file: applications/geochemistry/index
       sections:
-        - file: applications/miscellaneous/ph-dependence-on-co2-addition-in-seawater.ipynb
-        - file: applications/miscellaneous/ph-dependence-on-contaminants-in-water.ipynb
-        - file: applications/miscellaneous/evian-water-analysis.ipynb
-        - file: applications/miscellaneous/opening-bottle-with-sparkling-water.ipynb
+        - file: applications/geochemistry/ph-dependence-on-co2-addition-in-seawater.ipynb
+        - file: applications/geochemistry/ph-dependence-on-contaminants-in-water.ipynb
+        - file: applications/geochemistry/evian-water-analysis.ipynb
+        - file: applications/geochemistry/opening-bottle-with-sparkling-water.ipynb
   - caption: General
     chapters:
     - file: general/citing
