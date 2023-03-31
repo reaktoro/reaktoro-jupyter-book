@@ -90,6 +90,7 @@ parts:
         - file: applications/miscellaneous/ph-dependence-on-contaminants-in-water.ipynb
         - file: applications/miscellaneous/evian-water-analysis.ipynb
         - file: applications/miscellaneous/opening-bottle-with-sparkling-water.ipynb
+        - file: applications/miscellaneous/biomass-gasification.ipynb
   - caption: General
     chapters:
     - file: general/citing
