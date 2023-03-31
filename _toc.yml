@@ -32,6 +32,7 @@ parts:
         - file: tutorials/basics/computing-thermo-props-of-species
         - file: tutorials/basics/computing-thermo-props-of-reactions
         - file: tutorials/basics/specifying-activity-models
+        - file: tutorials/basics/defining-materials
 
       - file: tutorials/equilibrium/index
         sections:
@@ -55,12 +56,6 @@ parts:
         sections:
         - file: tutorials/machine-learning/machine-learning-basics.ipynb
 
-      - file: tutorials/miscellaneous/index
-        sections:
-        - file: tutorials/miscellaneous/defining-materials
-        - file: tutorials/miscellaneous/thermofun-cement-simulation-with-solid-solutions.ipynb
-        - file: tutorials/miscellaneous/thermofun-uraniun-solubility-vs-pH.ipynb
-
       - file: tutorials/advanced/index
         sections:
         - file: tutorials/advanced/creating-custom-databases
@@ -72,26 +67,25 @@ parts:
       sections:
         - file: applications/solubility/solubility-calcite-on-acidity-and-temperature.ipynb
         - file: applications/solubility/solubility-co2-on-salinity-and-temperature.ipynb
-    - file: applications/geobiology/index
-      sections:
-        - file: applications/geobiology/geobiology-streammodel-fixed-fugacity.ipynb
-        - file: applications/geobiology/geobiology-phreeqc-fixed-fugacity.ipynb
-    - file: applications/exchange/index
-      sections:
-        - file: applications/exchange/ion-exchange-dune-sand.ipynb
-        - file: applications/exchange/ion-exchange-mix-porewater-extractant.ipynb
-        - file: applications/exchange/ion-exchange-cax2-nax-kx-vs-changing-ca-k.ipynb
-        - file: applications/exchange/ion-exchange-calcite-cax-vs-ph.ipynb
-      sections:
-    - file: applications/biomass-gasification/index
-      sections:
-        - file: applications/biomass-gasification/biomass-gasification.ipynb
     - file: applications/geochemistry/index
       sections:
         - file: applications/geochemistry/ph-dependence-on-co2-addition-in-seawater.ipynb
         - file: applications/geochemistry/ph-dependence-on-contaminants-in-water.ipynb
         - file: applications/geochemistry/evian-water-analysis.ipynb
         - file: applications/geochemistry/opening-bottle-with-sparkling-water.ipynb
+        - file: applications/geochemistry/uraniun-speciation-vs-pH.ipynb
+        - file: applications/geochemistry/cement-simulation-with-solid-solutions.ipynb
+        - file: applications/geochemistry/ion-exchange-dune-sand.ipynb
+        - file: applications/geochemistry/ion-exchange-mix-porewater-extractant.ipynb
+        - file: applications/geochemistry/ion-exchange-cax2-nax-kx-vs-changing-ca-k.ipynb
+        - file: applications/geochemistry/ion-exchange-calcite-cax-vs-ph.ipynb
+    - file: applications/geobiology/index
+      sections:
+        - file: applications/geobiology/geobiology-streammodel-fixed-fugacity.ipynb
+        - file: applications/geobiology/geobiology-phreeqc-fixed-fugacity.ipynb
+    - file: applications/biomass-gasification/index
+      sections:
+        - file: applications/biomass-gasification/biomass-gasification.ipynb
   - caption: General
     chapters:
     - file: general/citing
