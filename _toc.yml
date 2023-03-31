@@ -84,13 +84,15 @@ parts:
       sections:
         - file: applications/thermofun/thermofun-cement-simulation-with-solid-solutions.ipynb
         - file: applications/thermofun/thermofun-uraniun-solubility-vs-pH.ipynb
+    - file: applications/biomass-gasification/index
+      sections:
+        - file: applications/biomass-gasification/biomass-gasification.ipynb
     - file: applications/miscellaneous/index
       sections:
         - file: applications/miscellaneous/ph-dependence-on-co2-addition-in-seawater.ipynb
         - file: applications/miscellaneous/ph-dependence-on-contaminants-in-water.ipynb
         - file: applications/miscellaneous/evian-water-analysis.ipynb
         - file: applications/miscellaneous/opening-bottle-with-sparkling-water.ipynb
-        - file: applications/miscellaneous/biomass-gasification.ipynb
   - caption: General
     chapters:
     - file: general/citing
