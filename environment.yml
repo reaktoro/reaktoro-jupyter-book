@@ -13,8 +13,8 @@ dependencies:
   - numpy
   - pandas
   - pip
-  - python=3.10
-  - reaktoro>=2.6.0
+  - python=3.11
+  - reaktoro>=2.8.0
   - reaktplot
   - sphinx-book-theme
   - sphinx-inline-tabs
