@@ -49,8 +49,7 @@ conda](../installation/installation-using-conda).
 ```
 
 ```{dropdown} I'm not a programmer. I find it challenging to use Reaktoro. What can I do?
-We have plans to build a web app for Reaktoro, with a modern user interface,
-which is more attractive to non-programmers. If you are reading this and happen
-to have skills in developing graphical user interfaces or want to finantially
-support this project, [please get in touch](mailto:allan.leal@erdw.ethz.ch).
+We will be building a web app for Reaktoro with a modern user interface to make
+Reaktoro more accessible and easier to use for non-programmers. Interested to
+learn more? Please do [get in touch with us](mailto:allan.leal@erdw.ethz.ch).
 ```
