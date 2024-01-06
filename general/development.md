@@ -252,6 +252,11 @@ Debugging different Python examples
 
 And that's it for now. More development recommendations will be added in the futur as needed. If you are encountering issues with the tips above, [please get in touch](mailto:allan.leal@erdw.ethz.ch).
 
+## Documentation
+
+A lot of the documentation at https://reaktoro.org is written as Jupyter notebooks here: https://github.com/reaktoro/reaktoro-jupyter-book
+
+To contribute to it you can edit it either on Github directly or by cloning the git repository locally, and then sending pull requests with proposed additions or improvements.
 
 [`ChemicalSystem.py`]: https://github.com/reaktoro/reaktoro/blob/main/Reaktoro/Core/ChemicalSystem.py
 [`ChemicalSystem.test.cxx`]: https://github.com/reaktoro/reaktoro/blob/main/Reaktoro/Core/ChemicalSystem.test.cxx
