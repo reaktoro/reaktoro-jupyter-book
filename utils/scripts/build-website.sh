@@ -36,7 +36,15 @@ cd reaktoro-1
 mkdir build
 cd build
 
+# Create a conda environment for Reaktoro v1 if it does not exist
+if conda info --envs | grep -q reaktoro-v1; then echo "reaktoro-v1 conda env already exists!"; else mamba create -y -n reaktoro-v1 reaktoro=1; fi
+
+# Activate the conda environment for Reaktoro v1
 conda activate reaktoro-v1
+
+# Install gxx_linux-64 if it does not exist
+if conda list | grep -q gxx_linux-64; then echo "gxx_linux-64 has already been installed!"; else mamba install gxx_linux-64 cmake make; fi
+
 cmake ..
 make website
 mkdir -p $html_dir/v1
