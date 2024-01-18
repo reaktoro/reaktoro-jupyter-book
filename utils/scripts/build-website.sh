@@ -39,6 +39,7 @@ if conda info --envs | grep -q website-reaktoro-v1; then echo "website-reaktoro-
     sed -i 's/name: reaktoro-v1/name: website-reaktoro-v1/' environment.devenv.yml  # rename the conda environment reaktoro-v1 to website-reaktoro-v1
 
     conda devenv -m mamba
+    mamba install gxx_linux-64 cmake make  # Ensure these tools are installed in the conda environment
 fi
 
 conda activate website-reaktoro-v1
@@ -69,6 +70,7 @@ if conda info --envs | grep -q website-reaktoro-v2; then echo "website-reaktoro-
     sed -i 's/name: reaktoro/name: website-reaktoro-v2/' environment.devenv.yml  # rename the conda environment reaktoro-v2 to website-reaktoro-v2
 
     conda devenv -m mamba
+    mamba install gxx_linux-64 cmake make  # Ensure these tools are installed in the conda environment
 fi
 
 conda activate website-reaktoro-v2
