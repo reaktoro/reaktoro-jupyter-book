@@ -33,17 +33,18 @@ wget https://github.com/reaktoro/reaktoro/archive/refs/heads/v1.zip -O v1.zip
 unzip -o -qq v1.zip
 
 cd reaktoro-1
+
+if conda info --envs | grep -q website-reaktoro-v1; then echo "website-reaktoro-v1 conda env already exists!"; else
+
+    sed -i 's/name: reaktoro-v1/name: website-reaktoro-v1/' environment.devenv.yml  # rename the conda environment reaktoro-v1 to website-reaktoro-v1
+
+    conda devenv -m mamba
+fi
+
+conda activate website-reaktoro-v1
+
 mkdir build
 cd build
-
-# Create a conda environment for Reaktoro v1 if it does not exist
-if conda info --envs | grep -q reaktoro-v1; then echo "reaktoro-v1 conda env already exists!"; else mamba create -y -n reaktoro-v1 reaktoro=1; fi
-
-# Activate the conda environment for Reaktoro v1
-conda activate reaktoro-v1
-
-# Install gxx_linux-64 if it does not exist
-if conda list | grep -q gxx_linux-64; then echo "gxx_linux-64 has already been installed!"; else mamba install gxx_linux-64 cmake make; fi
 
 cmake ..
 make website
@@ -62,10 +63,19 @@ wget https://github.com/reaktoro/reaktoro/archive/refs/heads/main.zip -O main.zi
 unzip -o -qq main.zip
 
 cd reaktoro-main
+
+if conda info --envs | grep -q website-reaktoro-v2; then echo "website-reaktoro-v2 conda env already exists!"; else
+
+    sed -i 's/name: reaktoro/name: website-reaktoro-v2/' environment.devenv.yml  # rename the conda environment reaktoro-v2 to website-reaktoro-v2
+
+    conda devenv -m mamba
+fi
+
+conda activate website-reaktoro-v2
+
 mkdir build
 cd build
 
-conda activate reaktoro
 cmake ..
 make docs
 mkdir -p $html_dir/api
